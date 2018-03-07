@@ -15,7 +15,7 @@ class CustomButton: UIButton {
 //        title
 //    }
     
-    var fontName = "HelveticaNeue"
+    var fontName = "GothamNarrow-Book"
     
     @IBInspectable var cornerRadius: CGFloat = 0 {
         didSet {
@@ -44,22 +44,22 @@ class CustomButton: UIButton {
     @IBInspectable var isBold: Bool = true {
         didSet {
             if isBold {
-                fontName = "HelveticaNeue-Bold"
+                fontName = "Helvetica-Bold"
             } else {
-                fontName = "HelveticaNeue"
+                fontName = "Helvetica"
             }
             
             titleLabel?.font = UIFont(name: fontName, size: buttonTextFontSize * UIScreen.main.bounds.size.height/667)
         }
     }
     
- 
+   
     
     func returnTextFont()-> String {
         if isBold == true {
-            return "HelveticaNeue-Bold"
+            return "Helvetica-Bold"
         } else {
-            return "HelveticaNeue-Bold"
+            return "Helvetica-Bold"
         }
     }
     

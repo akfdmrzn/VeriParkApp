@@ -20,6 +20,11 @@
 		CB08384A20502EDD0013F61D /* ImkbDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB08384820502EDD0013F61D /* ImkbDetailTableViewCell.xib */; };
 		CB08384D20502FFA0013F61D /* ImkbValueCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB08384B20502FFA0013F61D /* ImkbValueCellTableViewCell.swift */; };
 		CB08384E20502FFA0013F61D /* ImkbValueCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB08384C20502FFA0013F61D /* ImkbValueCellTableViewCell.xib */; };
+		CB08385420503EE50013F61D /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB08384F20503EE40013F61D /* CustomButton.swift */; };
+		CB08385520503EE50013F61D /* CustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB08385020503EE40013F61D /* CustomUIView.swift */; };
+		CB08385620503EE50013F61D /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB08385120503EE40013F61D /* CustomImageView.swift */; };
+		CB08385720503EE50013F61D /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB08385220503EE40013F61D /* CustomTextField.swift */; };
+		CB08385820503EE50013F61D /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB08385320503EE50013F61D /* CustomLabel.swift */; };
 		CCF94746173309537717BB74 /* Pods_veriParkAkif.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C871CD5C0A5F329AF95DD3E /* Pods_veriParkAkif.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,16 +57,15 @@
 		C54E94D21F8BFC910034F987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB083826205026500013F61D /* LeftMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
 		CB083828205026810013F61D /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
-		CB083837205029660013F61D /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
-		CB083838205029660013F61D /* CustomUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIView.swift; sourceTree = "<group>"; };
-		CB083839205029670013F61D /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
-		CB08383A205029670013F61D /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
-		CB08383B205029670013F61D /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
-		CB08383C205029670013F61D /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		CB08384720502EDD0013F61D /* ImkbDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImkbDetailTableViewCell.swift; sourceTree = "<group>"; };
 		CB08384820502EDD0013F61D /* ImkbDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImkbDetailTableViewCell.xib; sourceTree = "<group>"; };
 		CB08384B20502FFA0013F61D /* ImkbValueCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImkbValueCellTableViewCell.swift; sourceTree = "<group>"; };
 		CB08384C20502FFA0013F61D /* ImkbValueCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImkbValueCellTableViewCell.xib; sourceTree = "<group>"; };
+		CB08384F20503EE40013F61D /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		CB08385020503EE40013F61D /* CustomUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUIView.swift; sourceTree = "<group>"; };
+		CB08385120503EE40013F61D /* CustomImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		CB08385220503EE40013F61D /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		CB08385320503EE50013F61D /* CustomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,12 +149,11 @@
 		CB083836205029610013F61D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CB083839205029670013F61D /* CustomButton.swift */,
-				CB08383A205029670013F61D /* CustomImageView.swift */,
-				CB08383B205029670013F61D /* CustomLabel.swift */,
-				CB08383C205029670013F61D /* CustomTextField.swift */,
-				CB083837205029660013F61D /* CustomTextView.swift */,
-				CB083838205029660013F61D /* CustomUIView.swift */,
+				CB08384F20503EE40013F61D /* CustomButton.swift */,
+				CB08385120503EE40013F61D /* CustomImageView.swift */,
+				CB08385320503EE50013F61D /* CustomLabel.swift */,
+				CB08385220503EE40013F61D /* CustomTextField.swift */,
+				CB08385020503EE40013F61D /* CustomUIView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -414,9 +417,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C54E94BE1F8BFC910034F987 /* ViewController.swift in Sources */,
+				CB08385620503EE50013F61D /* CustomImageView.swift in Sources */,
+				CB08385820503EE50013F61D /* CustomLabel.swift in Sources */,
+				CB08385520503EE50013F61D /* CustomUIView.swift in Sources */,
 				C54E94BC1F8BFC910034F987 /* AppDelegate.swift in Sources */,
+				CB08385720503EE50013F61D /* CustomTextField.swift in Sources */,
 				CB08384D20502FFA0013F61D /* ImkbValueCellTableViewCell.swift in Sources */,
 				CB083829205026810013F61D /* CustomTabBarController.swift in Sources */,
+				CB08385420503EE50013F61D /* CustomButton.swift in Sources */,
 				CB08384920502EDD0013F61D /* ImkbDetailTableViewCell.swift in Sources */,
 				CB083827205026500013F61D /* LeftMenuViewController.swift in Sources */,
 			);

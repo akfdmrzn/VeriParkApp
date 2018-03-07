@@ -11,7 +11,7 @@ import UIKit
 @IBDesignable
 class CustomTextField: UITextField {
     
-    var fontName = "Helvetica"
+    var fontName = "GothamNarrow-Book"
     
     @IBInspectable var cornerRadius: CGFloat = 0 {
         didSet {
@@ -39,11 +39,10 @@ class CustomTextField: UITextField {
     
     @IBInspectable var isBold:Bool = false {
         didSet {
-            if isBold == true{
-                return "HelveticaNeue-Bold"
-            }
-            else{
-                return "Helvetica"
+            if isBold {
+                fontName = "Helvetica-Bold"
+            } else {
+                fontName = "Helvetica"
             }
             font = UIFont(name: fontName, size: TextFieldFontSize * UIScreen.main.bounds.size.height/667)
         }
@@ -51,7 +50,6 @@ class CustomTextField: UITextField {
     
     //TextField Padding.
     let padding = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 5);
-    
     
     override func textRect(forBounds bounds: CGRect) -> CGRect {
         return UIEdgeInsetsInsetRect(bounds, padding)
