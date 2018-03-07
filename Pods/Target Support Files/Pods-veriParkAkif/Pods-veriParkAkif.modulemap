@@ -1,0 +1,6 @@
+framework module Pods_veriParkAkif {
+  umbrella header "Pods-veriParkAkif-umbrella.h"
+
+  export *
+  module * { export * }
+}

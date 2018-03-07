@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		882C8B12932AD3013DC1A38E /* Pods_veriParkAkifTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24713D25E7A5E162B11F3F61 /* Pods_veriParkAkifTests.framework */; };
 		C54E94BC1F8BFC910034F987 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E94BB1F8BFC910034F987 /* AppDelegate.swift */; };
 		C54E94BE1F8BFC910034F987 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E94BD1F8BFC910034F987 /* ViewController.swift */; };
 		C54E94C11F8BFC910034F987 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C54E94BF1F8BFC910034F987 /* Main.storyboard */; };
 		C54E94C31F8BFC910034F987 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C54E94C21F8BFC910034F987 /* Assets.xcassets */; };
 		C54E94C61F8BFC910034F987 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C54E94C41F8BFC910034F987 /* LaunchScreen.storyboard */; };
 		C54E94D11F8BFC910034F987 /* veriParkAkifTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E94D01F8BFC910034F987 /* veriParkAkifTests.swift */; };
+		CB083827205026500013F61D /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB083826205026500013F61D /* LeftMenuViewController.swift */; };
+		CB083829205026810013F61D /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB083828205026810013F61D /* CustomTabBarController.swift */; };
+		CCF94746173309537717BB74 /* Pods_veriParkAkif.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C871CD5C0A5F329AF95DD3E /* Pods_veriParkAkif.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +30,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1341778C4F5CDE683F4F61FA /* Pods-veriParkAkif.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-veriParkAkif.debug.xcconfig"; path = "Pods/Target Support Files/Pods-veriParkAkif/Pods-veriParkAkif.debug.xcconfig"; sourceTree = "<group>"; };
+		1C871CD5C0A5F329AF95DD3E /* Pods_veriParkAkif.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_veriParkAkif.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24713D25E7A5E162B11F3F61 /* Pods_veriParkAkifTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_veriParkAkifTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31FC7AAB9BE8420D4433AFC9 /* Pods-veriParkAkif.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-veriParkAkif.release.xcconfig"; path = "Pods/Target Support Files/Pods-veriParkAkif/Pods-veriParkAkif.release.xcconfig"; sourceTree = "<group>"; };
+		7F7CF8CE6B489795BDF65D49 /* Pods-veriParkAkifTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-veriParkAkifTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-veriParkAkifTests/Pods-veriParkAkifTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BAB359782F3AB9E0489A5ED3 /* Pods-veriParkAkifTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-veriParkAkifTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-veriParkAkifTests/Pods-veriParkAkifTests.release.xcconfig"; sourceTree = "<group>"; };
 		C54E94B81F8BFC910034F987 /* veriParkAkif.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = veriParkAkif.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C54E94BB1F8BFC910034F987 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C54E94BD1F8BFC910034F987 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +46,8 @@
 		C54E94CC1F8BFC910034F987 /* veriParkAkifTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = veriParkAkifTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C54E94D01F8BFC910034F987 /* veriParkAkifTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = veriParkAkifTests.swift; sourceTree = "<group>"; };
 		C54E94D21F8BFC910034F987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB083826205026500013F61D /* LeftMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
+		CB083828205026810013F61D /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCF94746173309537717BB74 /* Pods_veriParkAkif.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +63,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				882C8B12932AD3013DC1A38E /* Pods_veriParkAkifTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		73F49AD9A71658AFB8172AC3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1341778C4F5CDE683F4F61FA /* Pods-veriParkAkif.debug.xcconfig */,
+				31FC7AAB9BE8420D4433AFC9 /* Pods-veriParkAkif.release.xcconfig */,
+				7F7CF8CE6B489795BDF65D49 /* Pods-veriParkAkifTests.debug.xcconfig */,
+				BAB359782F3AB9E0489A5ED3 /* Pods-veriParkAkifTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C54E94AF1F8BFC910034F987 = {
 			isa = PBXGroup;
 			children = (
 				C54E94BA1F8BFC910034F987 /* veriParkAkif */,
 				C54E94CF1F8BFC910034F987 /* veriParkAkifTests */,
 				C54E94B91F8BFC910034F987 /* Products */,
+				73F49AD9A71658AFB8172AC3 /* Pods */,
+				CF7B7CA26CB16BD1C1ABA73F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +110,8 @@
 				C54E94C21F8BFC910034F987 /* Assets.xcassets */,
 				C54E94C41F8BFC910034F987 /* LaunchScreen.storyboard */,
 				C54E94C71F8BFC910034F987 /* Info.plist */,
+				CB083826205026500013F61D /* LeftMenuViewController.swift */,
+				CB083828205026810013F61D /* CustomTabBarController.swift */,
 			);
 			path = veriParkAkif;
 			sourceTree = "<group>";
@@ -96,6 +125,15 @@
 			path = veriParkAkifTests;
 			sourceTree = "<group>";
 		};
+		CF7B7CA26CB16BD1C1ABA73F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C871CD5C0A5F329AF95DD3E /* Pods_veriParkAkif.framework */,
+				24713D25E7A5E162B11F3F61 /* Pods_veriParkAkifTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +141,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C54E94D51F8BFC910034F987 /* Build configuration list for PBXNativeTarget "veriParkAkif" */;
 			buildPhases = (
+				1C02DA4EDB15BFA3E2A56805 /* [CP] Check Pods Manifest.lock */,
 				C54E94B41F8BFC910034F987 /* Sources */,
 				C54E94B51F8BFC910034F987 /* Frameworks */,
 				C54E94B61F8BFC910034F987 /* Resources */,
+				2E81041BAC8DAC115A6309A6 /* [CP] Embed Pods Frameworks */,
+				76C705015719C0C1884A4195 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +161,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C54E94D81F8BFC910034F987 /* Build configuration list for PBXNativeTarget "veriParkAkifTests" */;
 			buildPhases = (
+				81355A3DED2AAD9772399F5B /* [CP] Check Pods Manifest.lock */,
 				C54E94C81F8BFC910034F987 /* Sources */,
 				C54E94C91F8BFC910034F987 /* Frameworks */,
 				C54E94CA1F8BFC910034F987 /* Resources */,
+				2A7CA911A89F1305C3E398E2 /* [CP] Embed Pods Frameworks */,
+				A97DB6F950CF8304CD3F5726 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,6 +238,110 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1C02DA4EDB15BFA3E2A56805 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-veriParkAkif-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A7CA911A89F1305C3E398E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-veriParkAkifTests/Pods-veriParkAkifTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E81041BAC8DAC115A6309A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-veriParkAkif/Pods-veriParkAkif-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-veriParkAkif/Pods-veriParkAkif-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76C705015719C0C1884A4195 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-veriParkAkif/Pods-veriParkAkif-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81355A3DED2AAD9772399F5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-veriParkAkifTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A97DB6F950CF8304CD3F5726 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-veriParkAkifTests/Pods-veriParkAkifTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C54E94B41F8BFC910034F987 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -201,6 +349,8 @@
 			files = (
 				C54E94BE1F8BFC910034F987 /* ViewController.swift in Sources */,
 				C54E94BC1F8BFC910034F987 /* AppDelegate.swift in Sources */,
+				CB083829205026810013F61D /* CustomTabBarController.swift in Sources */,
+				CB083827205026500013F61D /* LeftMenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +489,7 @@
 		};
 		C54E94D61F8BFC910034F987 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1341778C4F5CDE683F4F61FA /* Pods-veriParkAkif.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = veriParkAkif/Info.plist;
@@ -351,6 +502,7 @@
 		};
 		C54E94D71F8BFC910034F987 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31FC7AAB9BE8420D4433AFC9 /* Pods-veriParkAkif.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = veriParkAkif/Info.plist;
@@ -363,6 +515,7 @@
 		};
 		C54E94D91F8BFC910034F987 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F7CF8CE6B489795BDF65D49 /* Pods-veriParkAkifTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -377,6 +530,7 @@
 		};
 		C54E94DA1F8BFC910034F987 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAB359782F3AB9E0489A5ED3 /* Pods-veriParkAkifTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -408,6 +562,7 @@
 				C54E94D71F8BFC910034F987 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C54E94D81F8BFC910034F987 /* Build configuration list for PBXNativeTarget "veriParkAkifTests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +571,7 @@
 				C54E94DA1F8BFC910034F987 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
