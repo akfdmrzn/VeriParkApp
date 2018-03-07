@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -26,7 +27,7 @@
             </objects>
             <point key="canvasLocation" x="-625" y="551"/>
         </scene>
-        <!--Item 2-->
+        <!--Anasayfa-->
         <scene sceneID="I9L-0G-9xl">
             <objects>
                 <viewController id="dsc-Mg-iJf" sceneMemberID="viewController">
@@ -37,13 +38,54 @@
                     <view key="view" contentMode="scaleToFill" id="fy0-af-26f">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zw1-dv-epa" customClass="CustomButton">
+                                <rect key="frame" x="37.5" y="128" width="300" height="66.5"/>
+                                <state key="normal" title="IMKB Hisse Senetleri/Endeksler "/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="buttonTextFontSize">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Zw1-dv-epa" firstAttribute="height" secondItem="fy0-af-26f" secondAttribute="height" multiplier="0.1" id="J5s-SF-NYR"/>
+                            <constraint firstItem="Zw1-dv-epa" firstAttribute="centerX" secondItem="fy0-af-26f" secondAttribute="centerX" id="YWx-KN-IhU"/>
+                            <constraint firstItem="Zw1-dv-epa" firstAttribute="top" secondItem="7kG-7n-G5v" secondAttribute="bottom" multiplier="2" id="gmI-WM-21f"/>
+                            <constraint firstItem="Zw1-dv-epa" firstAttribute="width" secondItem="fy0-af-26f" secondAttribute="width" multiplier="0.8" id="jaf-bv-rP5"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="al1-3P-PZB"/>
+                    <tabBarItem key="tabBarItem" title="Anasayfa" id="al1-3P-PZB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KLp-Rp-Kw2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-122" y="1322"/>
+            <point key="canvasLocation" x="-122.40000000000001" y="1321.8890554722639"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Fcf-nL-wML">
+            <objects>
+                <viewController id="Azx-D6-JuI" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VJa-5z-0FJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="GLC-OJ-Kmz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eIn-io-855">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Mq-QS-V3w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-116" y="2005"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="Gd8-cN-e7d">
@@ -56,19 +98,37 @@
                     <view key="view" contentMode="scaleToFill" id="gw3-P8-JzY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="byE-c8-Sid">
+                                <rect key="frame" x="37.5" y="128" width="300" height="467"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="byE-c8-Sid" firstAttribute="width" secondItem="gw3-P8-JzY" secondAttribute="width" multiplier="0.8" id="Ga6-sV-zcJ"/>
+                            <constraint firstItem="byE-c8-Sid" firstAttribute="top" secondItem="tbG-dq-chI" secondAttribute="bottom" multiplier="2" id="OEK-G0-pWx"/>
+                            <constraint firstItem="byE-c8-Sid" firstAttribute="centerX" secondItem="gw3-P8-JzY" secondAttribute="centerX" id="b7H-2m-1Lj"/>
+                            <constraint firstItem="byE-c8-Sid" firstAttribute="height" secondItem="gw3-P8-JzY" secondAttribute="height" multiplier="0.7" id="tBO-cK-Kss"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="LiA-rr-Lv0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ptz-Gn-t8N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="610" y="1322"/>
+            <point key="canvasLocation" x="608.79999999999995" y="1321.8890554722639"/>
         </scene>
         <!--Custom Tab Bar Controller-->
         <scene sceneID="7QQ-RS-9bi">
             <objects>
                 <tabBarController id="NDj-Gs-7qG" customClass="CustomTabBarController" customModule="veriParkAkif" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="iMy-8H-tPD"/>
+                    <navigationItem key="navigationItem" id="iMy-8H-tPD">
+                        <barButtonItem key="leftBarButtonItem" image="menu" id="80X-KU-jAV">
+                            <connections>
+                                <segue destination="joG-ST-7pt" kind="presentation" modalPresentationStyle="fullScreen" id="iW6-rN-7CJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Srs-b2-9sh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -81,7 +141,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W0O-2c-5Ud" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="332" y="551"/>
+            <point key="canvasLocation" x="306" y="551"/>
         </scene>
         <!--Side Menu Navigation Controller-->
         <scene sceneID="QBH-Zl-zEQ">
@@ -108,7 +168,7 @@
         <!--Left Menu View Controller-->
         <scene sceneID="AfN-gk-Ook">
             <objects>
-                <viewController modalPresentationStyle="currentContext" id="NGB-PL-6Tt" customClass="LeftMenuViewController" customModule="veriParkAkif" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="currentContext" id="NGB-PL-6Tt" customClass="LeftMenuViewController" customModule="veriParkAkif" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zhj-MO-Cjf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -122,4 +182,7 @@
             <point key="canvasLocation" x="2102" y="551"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="menu" width="32" height="32"/>
+    </resources>
 </document>
