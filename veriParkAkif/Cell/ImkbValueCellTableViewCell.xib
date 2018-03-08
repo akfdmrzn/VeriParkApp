@@ -28,7 +28,7 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eux-Jk-gHM" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
-                        <rect key="frame" x="53" y="0.5" width="42.5" height="70.5"/>
+                        <rect key="frame" x="31.5" y="0.5" width="42.5" height="70.5"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -40,7 +40,7 @@
                         </userDefinedRuntimeAttributes>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JrN-Mu-nwR" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
-                        <rect key="frame" x="106" y="0.0" width="42" height="70.5"/>
+                        <rect key="frame" x="85" y="0.0" width="63" height="70.5"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -52,7 +52,7 @@
                         </userDefinedRuntimeAttributes>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1c-NJ-xo0" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
-                        <rect key="frame" x="159" y="0.0" width="42" height="70.5"/>
+                        <rect key="frame" x="148" y="0.0" width="42" height="70.5"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -64,19 +64,19 @@
                         </userDefinedRuntimeAttributes>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxg-ne-kd1" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
-                        <rect key="frame" x="212" y="0.0" width="42" height="70.5"/>
+                        <rect key="frame" x="196.5" y="0.0" width="72" height="70.5"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
-                                <real key="value" value="9"/>
+                                <real key="value" value="11"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDe-vE-kdm" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
-                        <rect key="frame" x="265" y="0.0" width="42" height="70.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.52" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDe-vE-kdm" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
+                        <rect key="frame" x="277" y="0.0" width="38" height="70.5"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -88,7 +88,7 @@
                         </userDefinedRuntimeAttributes>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGn-vG-1K3" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
-                        <rect key="frame" x="317.5" y="0.0" width="42" height="70.5"/>
+                        <rect key="frame" x="319.5" y="0.0" width="38" height="70.5"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -100,7 +100,7 @@
                         </userDefinedRuntimeAttributes>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40n-WY-amM" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
-                        <rect key="frame" x="370.5" y="0.0" width="42" height="70.5"/>
+                        <rect key="frame" x="360.5" y="0.0" width="61.5" height="70.5"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -114,18 +114,18 @@
                 </subviews>
                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
-                    <constraint firstItem="pDe-vE-kdm" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="1.35" id="0cf-Zz-ygX"/>
-                    <constraint firstItem="e1c-NJ-xo0" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="0.85" id="5Sr-Fy-kJe"/>
-                    <constraint firstItem="eux-Jk-gHM" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="0.35" id="AAo-sf-42y"/>
+                    <constraint firstItem="pDe-vE-kdm" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="1.4" id="0cf-Zz-ygX"/>
+                    <constraint firstItem="e1c-NJ-xo0" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="0.8" id="5Sr-Fy-kJe"/>
+                    <constraint firstItem="e1c-NJ-xo0" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.1" id="8Hv-go-u2u"/>
+                    <constraint firstItem="eux-Jk-gHM" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="0.25" id="AAo-sf-42y"/>
                     <constraint firstItem="40n-WY-amM" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="1.85" id="AUD-hF-bJf"/>
-                    <constraint firstItem="pDe-vE-kdm" firstAttribute="width" secondItem="pxg-ne-kd1" secondAttribute="width" id="BaW-EX-SC4"/>
-                    <constraint firstItem="pxg-ne-kd1" firstAttribute="width" secondItem="e1c-NJ-xo0" secondAttribute="width" id="JFh-cm-9Lx"/>
-                    <constraint firstItem="JrN-Mu-nwR" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.1" id="KIW-0X-iS9"/>
+                    <constraint firstItem="JrN-Mu-nwR" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.15" id="KIW-0X-iS9"/>
                     <constraint firstItem="dGn-vG-1K3" firstAttribute="height" secondItem="pDe-vE-kdm" secondAttribute="height" id="PN5-OL-qcB"/>
                     <constraint firstItem="pxg-ne-kd1" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="1.1" id="Qnn-QD-vZt"/>
                     <constraint firstItem="eux-Jk-gHM" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" id="Tjb-ue-PMy"/>
+                    <constraint firstItem="pDe-vE-kdm" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.09" id="TwT-xm-XhA"/>
                     <constraint firstItem="dGn-vG-1K3" firstAttribute="width" secondItem="pDe-vE-kdm" secondAttribute="width" id="UN3-Ym-1Rd"/>
-                    <constraint firstItem="JrN-Mu-nwR" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="0.6" id="UNx-Ew-lTG"/>
+                    <constraint firstItem="JrN-Mu-nwR" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="0.55" id="UNx-Ew-lTG"/>
                     <constraint firstItem="dGn-vG-1K3" firstAttribute="centerY" secondItem="pDe-vE-kdm" secondAttribute="centerY" id="WVe-hJ-dck"/>
                     <constraint firstItem="e1c-NJ-xo0" firstAttribute="centerY" secondItem="JrN-Mu-nwR" secondAttribute="centerY" id="Wo4-rp-1I2"/>
                     <constraint firstItem="e1c-NJ-xo0" firstAttribute="height" secondItem="JrN-Mu-nwR" secondAttribute="height" id="Y6b-NX-A3E"/>
@@ -133,9 +133,9 @@
                     <constraint firstItem="eux-Jk-gHM" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="b0t-dd-Dhc"/>
                     <constraint firstItem="pDe-vE-kdm" firstAttribute="height" secondItem="pxg-ne-kd1" secondAttribute="height" id="cYB-CY-1aJ"/>
                     <constraint firstItem="JrN-Mu-nwR" firstAttribute="centerY" secondItem="eux-Jk-gHM" secondAttribute="centerY" id="f8Y-ye-qUl"/>
-                    <constraint firstItem="e1c-NJ-xo0" firstAttribute="width" secondItem="JrN-Mu-nwR" secondAttribute="width" id="hAh-PE-sma"/>
+                    <constraint firstItem="pxg-ne-kd1" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.17" id="g6w-iE-g9l"/>
                     <constraint firstItem="pxg-ne-kd1" firstAttribute="height" secondItem="e1c-NJ-xo0" secondAttribute="height" id="kfZ-X7-70v"/>
-                    <constraint firstItem="40n-WY-amM" firstAttribute="width" secondItem="dGn-vG-1K3" secondAttribute="width" id="kng-nX-3tP"/>
+                    <constraint firstAttribute="trailing" secondItem="40n-WY-amM" secondAttribute="trailing" constant="1" id="mJU-ZD-dhI"/>
                     <constraint firstItem="tWx-Ne-YYM" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.3" id="nYq-dl-sxI"/>
                     <constraint firstItem="40n-WY-amM" firstAttribute="centerY" secondItem="dGn-vG-1K3" secondAttribute="centerY" id="oyO-c5-uwF"/>
                     <constraint firstItem="tWx-Ne-YYM" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="pzL-rH-rL7"/>

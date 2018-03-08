@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -40,7 +41,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tWO-o4-0ob">
-                                <rect key="frame" x="37.5" y="160" width="300" height="333.5"/>
+                                <rect key="frame" x="37.5" y="160" width="300" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
@@ -48,7 +49,7 @@
                         <constraints>
                             <constraint firstItem="tWO-o4-0ob" firstAttribute="width" secondItem="fy0-af-26f" secondAttribute="width" multiplier="0.8" id="V3A-Re-EbZ"/>
                             <constraint firstItem="tWO-o4-0ob" firstAttribute="top" secondItem="7kG-7n-G5v" secondAttribute="bottom" multiplier="2.5" id="nAn-u7-06l"/>
-                            <constraint firstItem="tWO-o4-0ob" firstAttribute="height" secondItem="fy0-af-26f" secondAttribute="height" multiplier="0.5" id="vdo-Bi-OIo"/>
+                            <constraint firstItem="tWO-o4-0ob" firstAttribute="height" secondItem="fy0-af-26f" secondAttribute="height" multiplier="0.6" id="vdo-Bi-OIo"/>
                             <constraint firstItem="tWO-o4-0ob" firstAttribute="centerX" secondItem="fy0-af-26f" secondAttribute="centerX" id="w40-gq-i5U"/>
                         </constraints>
                     </view>
@@ -61,10 +62,10 @@
             </objects>
             <point key="canvasLocation" x="-114.40000000000001" y="1268.8155922038982"/>
         </scene>
-        <!--Index Detail View Controller-->
+        <!--Detay-->
         <scene sceneID="Fcf-nL-wML">
             <objects>
-                <viewController id="Azx-D6-JuI" customClass="IndexDetailViewController" customModule="veriParkAkif" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Detay" id="Azx-D6-JuI" customClass="IndexDetailViewController" customModule="veriParkAkif" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VJa-5z-0FJ"/>
                         <viewControllerLayoutGuide type="bottom" id="GLC-OJ-Kmz"/>
@@ -72,12 +73,309 @@
                     <view key="view" contentMode="scaleToFill" id="eIn-io-855">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KOZAA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2F-pw-rb7" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
+                                <rect key="frame" x="-0.5" y="64" width="375.5" height="46.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sembol" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4JC-k3-eD0" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
+                                <rect key="frame" x="19" y="133.5" width="187.5" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fiyat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6O-rz-6mZ" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
+                                <rect key="frame" x="19" y="177" width="187.5" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Değişim %" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHM-dM-iej" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
+                                <rect key="frame" x="19" y="220.5" width="187.5" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Günlük Yüksek" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4R-Io-dRK" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
+                                <rect key="frame" x="19" y="263.5" width="187.5" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Günlük Düşük" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97Z-Pj-cPF" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
+                                <rect key="frame" x="19" y="307" width="187.5" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Son" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oel-0R-mk4" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
+                                <rect key="frame" x="19" y="350.5" width="187.5" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hacim" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vch-go-6k8" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
+                                <rect key="frame" x="19" y="393.5" width="187.5" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adet" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="raY-UV-iaK" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
+                                <rect key="frame" x="19" y="437" width="187.5" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KOZAA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jvi-pw-eiL" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
+                                <rect key="frame" x="206.5" y="133.5" width="168.5" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.30" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dTM-d7-Vy2" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
+                                <rect key="frame" x="206.5" y="177" width="168.5" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-0.10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qeg-RV-YBS" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
+                                <rect key="frame" x="206.5" y="221" width="94" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="35" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7f-Cr-4fC" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
+                                <rect key="frame" x="206.5" y="263.5" width="168.5" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PaX-49-vmz" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
+                                <rect key="frame" x="206" y="307" width="169" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="deC-s3-Uay" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
+                                <rect key="frame" x="206.5" y="351" width="168" height="32.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25351" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8d5-K7-TGu" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
+                                <rect key="frame" x="206.5" y="394" width="168" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEy-5U-Cjs" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
+                                <rect key="frame" x="206.5" y="437" width="168" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron-arrow-up" translatesAutoresizingMaskIntoConstraints="NO" id="oM1-m1-jfT">
+                                <rect key="frame" x="300.5" y="221" width="33" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="oM1-m1-jfT" secondAttribute="height" multiplier="1:1" id="aEI-eB-q2N"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PaX-49-vmz" firstAttribute="leading" secondItem="97Z-Pj-cPF" secondAttribute="trailing" id="0Be-gl-PGT"/>
+                            <constraint firstItem="qeg-RV-YBS" firstAttribute="bottom" secondItem="zHM-dM-iej" secondAttribute="bottom" id="0Zx-pt-mNC"/>
+                            <constraint firstItem="Y7f-Cr-4fC" firstAttribute="top" secondItem="N4R-Io-dRK" secondAttribute="top" id="0aT-j3-DfZ"/>
+                            <constraint firstItem="Jvi-pw-eiL" firstAttribute="bottom" secondItem="4JC-k3-eD0" secondAttribute="bottom" id="0mp-t3-HEo"/>
+                            <constraint firstItem="deC-s3-Uay" firstAttribute="leading" secondItem="Oel-0R-mk4" secondAttribute="trailing" id="19U-Tz-O5g"/>
+                            <constraint firstAttribute="trailing" secondItem="8d5-K7-TGu" secondAttribute="trailing" id="1U6-Ti-Juh"/>
+                            <constraint firstItem="PaX-49-vmz" firstAttribute="trailing" secondItem="Y7f-Cr-4fC" secondAttribute="trailing" id="1XM-bh-iEz"/>
+                            <constraint firstItem="raY-UV-iaK" firstAttribute="height" secondItem="vch-go-6k8" secondAttribute="height" id="1fQ-aq-3ll"/>
+                            <constraint firstItem="qeg-RV-YBS" firstAttribute="width" secondItem="eIn-io-855" secondAttribute="width" multiplier="0.25" id="1mf-bQ-lzp"/>
+                            <constraint firstItem="97Z-Pj-cPF" firstAttribute="trailing" secondItem="N4R-Io-dRK" secondAttribute="trailing" id="2z0-vG-MbO"/>
+                            <constraint firstItem="4JC-k3-eD0" firstAttribute="centerX" secondItem="eIn-io-855" secondAttribute="centerX" multiplier="0.6" id="3Nw-Gx-aDw"/>
+                            <constraint firstItem="vch-go-6k8" firstAttribute="trailing" secondItem="Oel-0R-mk4" secondAttribute="trailing" id="6Nh-3k-muI"/>
+                            <constraint firstItem="v2F-pw-rb7" firstAttribute="centerX" secondItem="eIn-io-855" secondAttribute="centerX" id="7zT-3T-TgA"/>
+                            <constraint firstAttribute="trailing" secondItem="deC-s3-Uay" secondAttribute="trailing" id="9hs-tb-OKc"/>
+                            <constraint firstItem="Jvi-pw-eiL" firstAttribute="top" secondItem="4JC-k3-eD0" secondAttribute="top" id="AKI-Fv-eJ3"/>
+                            <constraint firstItem="8d5-K7-TGu" firstAttribute="bottom" secondItem="vch-go-6k8" secondAttribute="bottom" id="Akm-SG-5rF"/>
+                            <constraint firstItem="oM1-m1-jfT" firstAttribute="top" secondItem="qeg-RV-YBS" secondAttribute="top" id="CKa-Wz-6eb"/>
+                            <constraint firstItem="Oel-0R-mk4" firstAttribute="centerY" secondItem="eIn-io-855" secondAttribute="centerY" multiplier="1.1" id="COD-3x-qS1"/>
+                            <constraint firstItem="raY-UV-iaK" firstAttribute="centerY" secondItem="eIn-io-855" secondAttribute="centerY" multiplier="1.36" id="Dcw-6p-hlS"/>
+                            <constraint firstItem="4JC-k3-eD0" firstAttribute="centerY" secondItem="eIn-io-855" secondAttribute="centerY" multiplier="0.45" id="GkX-np-6NJ"/>
+                            <constraint firstAttribute="trailing" secondItem="dTM-d7-Vy2" secondAttribute="trailing" id="IDF-c4-vmE"/>
+                            <constraint firstItem="Jvi-pw-eiL" firstAttribute="leading" secondItem="4JC-k3-eD0" secondAttribute="trailing" id="Kx8-5r-IDt"/>
+                            <constraint firstItem="97Z-Pj-cPF" firstAttribute="height" secondItem="N4R-Io-dRK" secondAttribute="height" id="M1b-4u-LWh"/>
+                            <constraint firstItem="Y7f-Cr-4fC" firstAttribute="leading" secondItem="N4R-Io-dRK" secondAttribute="trailing" id="N2B-dW-E7Z"/>
+                            <constraint firstItem="N4R-Io-dRK" firstAttribute="height" secondItem="zHM-dM-iej" secondAttribute="height" id="Ny4-FH-GCt"/>
+                            <constraint firstItem="zHM-dM-iej" firstAttribute="centerY" secondItem="eIn-io-855" secondAttribute="centerY" multiplier="0.71" id="P42-JS-TOQ"/>
+                            <constraint firstItem="vEy-5U-Cjs" firstAttribute="top" secondItem="raY-UV-iaK" secondAttribute="top" id="PFy-7B-dO8"/>
+                            <constraint firstItem="vEy-5U-Cjs" firstAttribute="bottom" secondItem="raY-UV-iaK" secondAttribute="bottom" id="Qci-aA-A3J"/>
+                            <constraint firstItem="w6O-rz-6mZ" firstAttribute="leading" secondItem="4JC-k3-eD0" secondAttribute="leading" id="ReV-fJ-irC"/>
+                            <constraint firstItem="zHM-dM-iej" firstAttribute="height" secondItem="w6O-rz-6mZ" secondAttribute="height" id="SOp-3A-zjv"/>
+                            <constraint firstItem="zHM-dM-iej" firstAttribute="leading" secondItem="w6O-rz-6mZ" secondAttribute="leading" id="Tdr-2d-eVg"/>
+                            <constraint firstItem="v2F-pw-rb7" firstAttribute="width" secondItem="eIn-io-855" secondAttribute="width" id="UF2-l9-dXC"/>
+                            <constraint firstItem="w6O-rz-6mZ" firstAttribute="centerY" secondItem="eIn-io-855" secondAttribute="centerY" multiplier="0.58" id="UJC-EN-oKx"/>
+                            <constraint firstItem="N4R-Io-dRK" firstAttribute="centerY" secondItem="eIn-io-855" secondAttribute="centerY" multiplier="0.84" id="UVz-EC-TcA"/>
+                            <constraint firstItem="oM1-m1-jfT" firstAttribute="leading" secondItem="qeg-RV-YBS" secondAttribute="trailing" id="V06-Ug-HGi"/>
+                            <constraint firstItem="deC-s3-Uay" firstAttribute="bottom" secondItem="Oel-0R-mk4" secondAttribute="bottom" id="Vxg-c1-HxK"/>
+                            <constraint firstItem="Oel-0R-mk4" firstAttribute="leading" secondItem="97Z-Pj-cPF" secondAttribute="leading" id="W1G-EL-oi9"/>
+                            <constraint firstItem="N4R-Io-dRK" firstAttribute="trailing" secondItem="zHM-dM-iej" secondAttribute="trailing" id="XdT-e4-7wO"/>
+                            <constraint firstItem="8d5-K7-TGu" firstAttribute="top" secondItem="vch-go-6k8" secondAttribute="top" id="Xla-Go-S14"/>
+                            <constraint firstItem="deC-s3-Uay" firstAttribute="top" secondItem="Oel-0R-mk4" secondAttribute="top" id="Xvb-0X-UwL"/>
+                            <constraint firstItem="vEy-5U-Cjs" firstAttribute="leading" secondItem="raY-UV-iaK" secondAttribute="trailing" id="Zcj-xF-7VJ"/>
+                            <constraint firstItem="97Z-Pj-cPF" firstAttribute="leading" secondItem="N4R-Io-dRK" secondAttribute="leading" id="cIv-EQ-0Zw"/>
+                            <constraint firstItem="Oel-0R-mk4" firstAttribute="height" secondItem="97Z-Pj-cPF" secondAttribute="height" id="d2e-97-WXR"/>
+                            <constraint firstItem="vch-go-6k8" firstAttribute="leading" secondItem="Oel-0R-mk4" secondAttribute="leading" id="e97-SY-Z6e"/>
+                            <constraint firstItem="oM1-m1-jfT" firstAttribute="centerY" secondItem="qeg-RV-YBS" secondAttribute="centerY" id="eb4-rx-bUC"/>
+                            <constraint firstItem="PaX-49-vmz" firstAttribute="bottom" secondItem="97Z-Pj-cPF" secondAttribute="bottom" id="f4Y-FK-sgc"/>
+                            <constraint firstItem="dTM-d7-Vy2" firstAttribute="leading" secondItem="w6O-rz-6mZ" secondAttribute="trailing" id="f4m-qq-vNm"/>
+                            <constraint firstItem="Y7f-Cr-4fC" firstAttribute="bottom" secondItem="N4R-Io-dRK" secondAttribute="bottom" id="fpK-bg-4XG"/>
+                            <constraint firstItem="raY-UV-iaK" firstAttribute="leading" secondItem="vch-go-6k8" secondAttribute="leading" id="gAc-BI-zAf"/>
+                            <constraint firstItem="vch-go-6k8" firstAttribute="centerY" secondItem="eIn-io-855" secondAttribute="centerY" multiplier="1.23" id="gQN-9k-MVF"/>
+                            <constraint firstItem="qeg-RV-YBS" firstAttribute="leading" secondItem="zHM-dM-iej" secondAttribute="trailing" id="gn8-OE-7sE"/>
+                            <constraint firstItem="4JC-k3-eD0" firstAttribute="width" secondItem="eIn-io-855" secondAttribute="width" multiplier="0.5" id="hF5-60-h7S"/>
+                            <constraint firstItem="qeg-RV-YBS" firstAttribute="top" secondItem="zHM-dM-iej" secondAttribute="top" id="heu-Uy-8AQ"/>
+                            <constraint firstItem="8d5-K7-TGu" firstAttribute="leading" secondItem="vch-go-6k8" secondAttribute="trailing" id="iHO-sd-5eH"/>
+                            <constraint firstItem="4JC-k3-eD0" firstAttribute="height" secondItem="eIn-io-855" secondAttribute="height" multiplier="0.05" id="jFP-Xj-Iwo"/>
+                            <constraint firstItem="vch-go-6k8" firstAttribute="height" secondItem="Oel-0R-mk4" secondAttribute="height" id="jU6-Dr-9A2"/>
+                            <constraint firstItem="v2F-pw-rb7" firstAttribute="height" secondItem="eIn-io-855" secondAttribute="height" multiplier="0.07" id="jnC-K1-JKN"/>
+                            <constraint firstItem="Oel-0R-mk4" firstAttribute="trailing" secondItem="97Z-Pj-cPF" secondAttribute="trailing" id="lg0-2u-uCb"/>
+                            <constraint firstAttribute="trailing" secondItem="Y7f-Cr-4fC" secondAttribute="trailing" id="lgt-vb-1r7"/>
+                            <constraint firstAttribute="trailing" secondItem="vEy-5U-Cjs" secondAttribute="trailing" id="mIN-QT-VKK"/>
+                            <constraint firstItem="w6O-rz-6mZ" firstAttribute="height" secondItem="4JC-k3-eD0" secondAttribute="height" id="mmB-Y5-0Wz"/>
+                            <constraint firstItem="v2F-pw-rb7" firstAttribute="top" secondItem="VJa-5z-0FJ" secondAttribute="bottom" id="mwh-wH-b1K"/>
+                            <constraint firstItem="97Z-Pj-cPF" firstAttribute="centerY" secondItem="eIn-io-855" secondAttribute="centerY" multiplier="0.97" id="n39-C0-mCa"/>
+                            <constraint firstItem="N4R-Io-dRK" firstAttribute="leading" secondItem="zHM-dM-iej" secondAttribute="leading" id="pxK-Kv-wKL"/>
+                            <constraint firstItem="dTM-d7-Vy2" firstAttribute="bottom" secondItem="w6O-rz-6mZ" secondAttribute="bottom" id="rZ5-WQ-MKn"/>
+                            <constraint firstItem="zHM-dM-iej" firstAttribute="trailing" secondItem="w6O-rz-6mZ" secondAttribute="trailing" id="rvH-rR-w9k"/>
+                            <constraint firstItem="raY-UV-iaK" firstAttribute="trailing" secondItem="vch-go-6k8" secondAttribute="trailing" id="teh-93-S4y"/>
+                            <constraint firstItem="oM1-m1-jfT" firstAttribute="bottom" secondItem="qeg-RV-YBS" secondAttribute="bottom" id="wS0-gW-Ck0"/>
+                            <constraint firstItem="dTM-d7-Vy2" firstAttribute="top" secondItem="w6O-rz-6mZ" secondAttribute="top" id="xvv-EC-mRv"/>
+                            <constraint firstItem="w6O-rz-6mZ" firstAttribute="trailing" secondItem="4JC-k3-eD0" secondAttribute="trailing" id="xxG-p4-dlh"/>
+                            <constraint firstAttribute="trailing" secondItem="Jvi-pw-eiL" secondAttribute="trailing" id="zkV-Gr-YYr"/>
+                            <constraint firstItem="PaX-49-vmz" firstAttribute="top" secondItem="97Z-Pj-cPF" secondAttribute="top" id="zy3-2d-DCd"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="labelOfAmount" destination="vEy-5U-Cjs" id="iBx-bg-Zv0"/>
+                        <outlet property="labelOfChange" destination="qeg-RV-YBS" id="bZT-gx-YBg"/>
+                        <outlet property="labelOfEnd" destination="deC-s3-Uay" id="5NB-UV-G0k"/>
+                        <outlet property="labelOfHighest" destination="Y7f-Cr-4fC" id="JZo-Fq-RgJ"/>
+                        <outlet property="labelOfLowest" destination="PaX-49-vmz" id="Tiq-25-LG4"/>
+                        <outlet property="labelOfPrice" destination="dTM-d7-Vy2" id="c18-qj-tNu"/>
+                        <outlet property="labelOfSymbolName" destination="Jvi-pw-eiL" id="mDC-YQ-d3s"/>
+                        <outlet property="labelOfTitle" destination="v2F-pw-rb7" id="9dV-Sc-vmm"/>
+                        <outlet property="labelOfVolume" destination="8d5-K7-TGu" id="KXg-9n-kpQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Mq-QS-V3w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="609" y="2054"/>
+            <point key="canvasLocation" x="734" y="2075"/>
         </scene>
         <!--Hisseler-->
         <scene sceneID="Gd8-cN-e7d">
@@ -91,7 +389,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="cEs-J2-A6s">
+                            <searchBar contentMode="redraw" placeholder="Arama Yap" translatesAutoresizingMaskIntoConstraints="NO" id="cEs-J2-A6s">
                                 <rect key="frame" x="0.0" y="64" width="375" height="54"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
@@ -112,7 +410,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sembol" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Cs-Ed-p0t" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
-                                <rect key="frame" x="47" y="118.5" width="37.5" height="33.5"/>
+                                <rect key="frame" x="28" y="118.5" width="37.5" height="33.5"/>
                                 <color key="backgroundColor" red="0.81661184210000004" green="0.81661184210000004" blue="0.81661184210000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <nil key="textColor"/>
@@ -124,7 +422,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fiyat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgH-rs-ZZ9" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
-                                <rect key="frame" x="94" y="118.5" width="37.5" height="33.5"/>
+                                <rect key="frame" x="75" y="118.5" width="56.5" height="33.5"/>
                                 <color key="backgroundColor" red="0.81661184210000004" green="0.81661184210000004" blue="0.81661184210000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <nil key="textColor"/>
@@ -136,7 +434,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fark" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w3Z-yC-qO0" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
-                                <rect key="frame" x="140.5" y="118.5" width="37.5" height="33.5"/>
+                                <rect key="frame" x="132" y="118.5" width="37.5" height="33.5"/>
                                 <color key="backgroundColor" red="0.81661184210000004" green="0.81661184210000004" blue="0.81661184210000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <nil key="textColor"/>
@@ -148,7 +446,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hacim" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pPs-Qr-2Kd" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
-                                <rect key="frame" x="188" y="118.5" width="37" height="33.5"/>
+                                <rect key="frame" x="174.5" y="118.5" width="63.5" height="33.5"/>
                                 <color key="backgroundColor" red="0.81661184210000004" green="0.81661184210000004" blue="0.81661184210000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <nil key="textColor"/>
@@ -160,7 +458,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alış" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Jz-NW-gTA" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
-                                <rect key="frame" x="235" y="118.5" width="37" height="33.5"/>
+                                <rect key="frame" x="245.5" y="118.5" width="34" height="33.5"/>
                                 <color key="backgroundColor" red="0.81661184210000004" green="0.81661184210000004" blue="0.81661184210000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <nil key="textColor"/>
@@ -172,7 +470,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Satış" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IS4-BH-Itx" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
-                                <rect key="frame" x="282" y="118.5" width="37" height="33.5"/>
+                                <rect key="frame" x="283.5" y="118.5" width="34" height="33.5"/>
                                 <color key="backgroundColor" red="0.81661184210000004" green="0.81661184210000004" blue="0.81661184210000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <nil key="textColor"/>
@@ -184,7 +482,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tarih" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hq5-Ff-Nme" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
-                                <rect key="frame" x="328.5" y="119" width="37" height="33.5"/>
+                                <rect key="frame" x="320" y="119" width="54" height="34"/>
                                 <color key="backgroundColor" red="0.81661184210000004" green="0.81661184210000004" blue="0.81661184210000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <nil key="textColor"/>
@@ -205,35 +503,35 @@
                             <constraint firstItem="4Cs-Ed-p0t" firstAttribute="centerY" secondItem="RbI-OA-rnj" secondAttribute="centerY" id="8oE-DO-oDn"/>
                             <constraint firstItem="1Jz-NW-gTA" firstAttribute="centerY" secondItem="pPs-Qr-2Kd" secondAttribute="centerY" id="9jw-6m-3Ml"/>
                             <constraint firstItem="RbI-OA-rnj" firstAttribute="height" secondItem="gw3-P8-JzY" secondAttribute="height" multiplier="0.05" id="DQR-9Y-dEE"/>
-                            <constraint firstItem="xgH-rs-ZZ9" firstAttribute="centerX" secondItem="gw3-P8-JzY" secondAttribute="centerX" multiplier="0.6" id="FJ3-8q-u4R"/>
+                            <constraint firstItem="xgH-rs-ZZ9" firstAttribute="centerX" secondItem="gw3-P8-JzY" secondAttribute="centerX" multiplier="0.55" id="FJ3-8q-u4R"/>
                             <constraint firstItem="IS4-BH-Itx" firstAttribute="width" secondItem="1Jz-NW-gTA" secondAttribute="width" id="FUs-05-LhJ"/>
                             <constraint firstItem="pPs-Qr-2Kd" firstAttribute="height" secondItem="w3Z-yC-qO0" secondAttribute="height" id="Fhf-t5-Goj"/>
                             <constraint firstItem="vvw-09-EGc" firstAttribute="top" secondItem="byE-c8-Sid" secondAttribute="bottom" id="Fxa-B7-J8q"/>
                             <constraint firstItem="byE-c8-Sid" firstAttribute="width" secondItem="gw3-P8-JzY" secondAttribute="width" id="Ga6-sV-zcJ"/>
-                            <constraint firstItem="w3Z-yC-qO0" firstAttribute="width" secondItem="xgH-rs-ZZ9" secondAttribute="width" id="GgY-Fr-g9r"/>
                             <constraint firstItem="cEs-J2-A6s" firstAttribute="height" secondItem="gw3-P8-JzY" secondAttribute="height" multiplier="0.08" id="IEl-u4-1Ct"/>
-                            <constraint firstItem="1Jz-NW-gTA" firstAttribute="width" secondItem="pPs-Qr-2Kd" secondAttribute="width" id="Jdg-q4-aly"/>
                             <constraint firstItem="w3Z-yC-qO0" firstAttribute="height" secondItem="xgH-rs-ZZ9" secondAttribute="height" id="JhP-3p-dMN"/>
                             <constraint firstItem="4Cs-Ed-p0t" firstAttribute="height" secondItem="RbI-OA-rnj" secondAttribute="height" id="Kw6-fA-6LQ"/>
-                            <constraint firstItem="w3Z-yC-qO0" firstAttribute="centerX" secondItem="gw3-P8-JzY" secondAttribute="centerX" multiplier="0.85" id="MQ2-0I-UNn"/>
-                            <constraint firstItem="xgH-rs-ZZ9" firstAttribute="width" secondItem="gw3-P8-JzY" secondAttribute="width" multiplier="0.1" id="Nt5-Fb-eOO"/>
+                            <constraint firstItem="w3Z-yC-qO0" firstAttribute="centerX" secondItem="gw3-P8-JzY" secondAttribute="centerX" multiplier="0.8" id="MQ2-0I-UNn"/>
+                            <constraint firstItem="xgH-rs-ZZ9" firstAttribute="width" secondItem="gw3-P8-JzY" secondAttribute="width" multiplier="0.15" id="Nt5-Fb-eOO"/>
                             <constraint firstItem="RbI-OA-rnj" firstAttribute="leading" secondItem="gw3-P8-JzY" secondAttribute="leading" id="P3r-z1-Pm8"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="RbI-OA-rnj" secondAttribute="trailing" id="QSO-VR-i5r"/>
-                            <constraint firstItem="Hq5-Ff-Nme" firstAttribute="width" secondItem="IS4-BH-Itx" secondAttribute="width" id="RUF-mn-X4t"/>
+                            <constraint firstAttribute="trailing" secondItem="Hq5-Ff-Nme" secondAttribute="trailing" constant="1" id="Sgs-u2-AVz"/>
                             <constraint firstItem="pPs-Qr-2Kd" firstAttribute="centerY" secondItem="w3Z-yC-qO0" secondAttribute="centerY" id="TTk-5c-2lr"/>
                             <constraint firstItem="4Cs-Ed-p0t" firstAttribute="width" secondItem="gw3-P8-JzY" secondAttribute="width" multiplier="0.1" id="UTb-dK-7l5"/>
                             <constraint firstItem="Hq5-Ff-Nme" firstAttribute="centerY" secondItem="IS4-BH-Itx" secondAttribute="centerY" id="WjM-oF-4Yi"/>
-                            <constraint firstItem="1Jz-NW-gTA" firstAttribute="centerX" secondItem="gw3-P8-JzY" secondAttribute="centerX" multiplier="1.35" id="XaR-JA-Mrp"/>
+                            <constraint firstItem="1Jz-NW-gTA" firstAttribute="centerX" secondItem="gw3-P8-JzY" secondAttribute="centerX" multiplier="1.4" id="XaR-JA-Mrp"/>
                             <constraint firstItem="xgH-rs-ZZ9" firstAttribute="centerY" secondItem="4Cs-Ed-p0t" secondAttribute="centerY" id="Y9j-FK-1G1"/>
+                            <constraint firstItem="1Jz-NW-gTA" firstAttribute="width" secondItem="gw3-P8-JzY" secondAttribute="width" multiplier="0.09" id="Yni-vJ-0PT"/>
                             <constraint firstItem="1Jz-NW-gTA" firstAttribute="height" secondItem="pPs-Qr-2Kd" secondAttribute="height" id="b4i-qy-mW5"/>
                             <constraint firstItem="byE-c8-Sid" firstAttribute="centerX" secondItem="gw3-P8-JzY" secondAttribute="centerX" id="b7H-2m-1Lj"/>
-                            <constraint firstItem="pPs-Qr-2Kd" firstAttribute="width" secondItem="w3Z-yC-qO0" secondAttribute="width" id="bOw-gt-uD2"/>
                             <constraint firstItem="cEs-J2-A6s" firstAttribute="top" secondItem="tbG-dq-chI" secondAttribute="bottom" id="box-6y-rh8"/>
                             <constraint firstAttribute="trailing" secondItem="cEs-J2-A6s" secondAttribute="trailing" id="ckF-F5-Vdg"/>
                             <constraint firstItem="IS4-BH-Itx" firstAttribute="centerY" secondItem="1Jz-NW-gTA" secondAttribute="centerY" id="cuP-vI-bcq"/>
-                            <constraint firstItem="4Cs-Ed-p0t" firstAttribute="centerX" secondItem="gw3-P8-JzY" secondAttribute="centerX" multiplier="0.35" id="dBe-28-u9i"/>
+                            <constraint firstItem="4Cs-Ed-p0t" firstAttribute="centerX" secondItem="gw3-P8-JzY" secondAttribute="centerX" multiplier="0.25" id="dBe-28-u9i"/>
                             <constraint firstItem="cEs-J2-A6s" firstAttribute="leading" secondItem="gw3-P8-JzY" secondAttribute="leading" id="h0P-0l-x2P"/>
+                            <constraint firstItem="w3Z-yC-qO0" firstAttribute="width" secondItem="gw3-P8-JzY" secondAttribute="width" multiplier="0.1" id="hq2-4a-mLF"/>
                             <constraint firstItem="Hq5-Ff-Nme" firstAttribute="height" secondItem="IS4-BH-Itx" secondAttribute="height" id="l3e-oE-UVj"/>
+                            <constraint firstItem="pPs-Qr-2Kd" firstAttribute="width" secondItem="gw3-P8-JzY" secondAttribute="width" multiplier="0.17" id="p8r-bv-wfT"/>
                             <constraint firstItem="w3Z-yC-qO0" firstAttribute="centerY" secondItem="xgH-rs-ZZ9" secondAttribute="centerY" id="p9Y-So-xP4"/>
                             <constraint firstItem="pPs-Qr-2Kd" firstAttribute="centerX" secondItem="gw3-P8-JzY" secondAttribute="centerX" multiplier="1.1" id="pcQ-Xg-71b"/>
                             <constraint firstItem="byE-c8-Sid" firstAttribute="top" secondItem="RbI-OA-rnj" secondAttribute="bottom" id="slK-gv-wX3"/>
@@ -245,11 +543,12 @@
                     <connections>
                         <outlet property="serachBar" destination="cEs-J2-A6s" id="3YT-fj-gmG"/>
                         <outlet property="tableViewOfIndex" destination="byE-c8-Sid" id="gO7-3F-AK2"/>
+                        <segue destination="Azx-D6-JuI" kind="show" identifier="segueGoToIndexDetailVC" id="w5Q-Rg-4Cj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ptz-Gn-t8N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="735" y="1269"/>
+            <point key="canvasLocation" x="733.60000000000002" y="1268.8155922038982"/>
         </scene>
         <!--Custom Tab Bar Controller-->
         <scene sceneID="7QQ-RS-9bi">
@@ -317,6 +616,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chevron-arrow-up" width="64" height="64"/>
         <image name="homepage" width="32" height="32"/>
         <image name="menu" width="32" height="32"/>
         <image name="profits" width="32" height="32"/>

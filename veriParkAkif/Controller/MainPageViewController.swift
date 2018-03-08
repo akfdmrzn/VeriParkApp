@@ -23,10 +23,12 @@ class MainPageViewController: BaseController {
         
         self.modelEncrypt.encryptDelegate = self
         self.modelEncrypt.sendDataToService()
+        self.indicatorShow(status: true)
     }
 }
 extension MainPageViewController : EncryptDelegate{
     func isEncrypted(isCorrect: Bool, data: String, message: String) {
+        self.indicatorShow(status: false)
         if isCorrect{
             print(data)
             encryptedData = data
@@ -38,7 +40,7 @@ extension MainPageViewController : EncryptDelegate{
 }
 extension MainPageViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return self.view.frame.height * 0.002
+        return self.view.frame.height * 0.02
         
     }
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
@@ -46,7 +48,7 @@ extension MainPageViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return self.tableviewOfChoose.frame.height * 0.1
+        return self.tableviewOfChoose.frame.height * 0.12
     }
 }
 extension MainPageViewController: UITableViewDataSource {

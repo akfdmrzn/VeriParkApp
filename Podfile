@@ -11,7 +11,8 @@ target 'veriParkAkif' do
   pod 'AEXML'
   pod 'SideMenu'
   pod 'IQKeyboardManagerSwift'
-
+  pod 'NVActivityIndicatorView'
+  
   target 'veriParkAkifTests' do
     inherit! :search_paths
     # Pods for testing

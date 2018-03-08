@@ -17,6 +17,7 @@ class PostConnection
         Alamofire.request(urlRequest)
             .responseString { response in
                 if let xmlString = response.result.value {
+                    print("Response : \(xmlString)")
                     self.delegate?.getDataFromService(xmlData: xmlString)
                 }
         }
