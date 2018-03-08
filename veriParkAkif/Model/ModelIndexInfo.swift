@@ -12,7 +12,7 @@ import Alamofire
 import SWXMLHash
 
 protocol  IndexInfoDelegate : class{
-    func IndexInfoDelegate(isCorrect: Bool, data : ResponseModelIndexInfo,message : String)
+    func IndexInfoDelegate(isCorrect: Bool, data : [ResponseModelIndexInfo],message : String)
 }
 class ModelIndexInfo: ConnectionDelegate {
 
@@ -33,10 +33,13 @@ class ModelIndexInfo: ConnectionDelegate {
         let body = envelope.addChild(name: "soap:Body")
         let geoIp = body.addChild(name:"GetForexStocksandIndexesInfo", attributes:["xmlns":"http://tempuri.org/"])
         let son = geoIp.addChild(name: "request",  attributes: [:])
+      
         son.addChild(name: "RequestKey", value: self.encryptedData, attributes: [:])
         son.addChild(name: "Period", value: "Day", attributes: [:])
+      
         let soapLenth = String(soapRequest.xml.characters.count)
         let theURL = URL(string: "http://mobileexam.veripark.com/mobileforeks/service.asmx")
+     
         var mutableR = URLRequest(url: theURL!)
         mutableR.addValue("text/xml; charset=utf-8", forHTTPHeaderField: "Content-Type")
         mutableR.addValue("http://tempuri.org/GetForexStocksandIndexesInfo", forHTTPHeaderField: "SOAPAction")
@@ -48,64 +51,59 @@ class ModelIndexInfo: ConnectionDelegate {
     }
     func getDataFromService(xmlData: String) {
      
-            let myXml = SWXMLHash.parse(xmlData)
-            let body =  myXml["soap:Envelope"]["soap:Body"]["GetForexStocksandIndexesInfoResponse"]["GetForexStocksandIndexesInfoResult"]["RequestResult"]["Success"].element
-        
-        if !Bool(body.text) {
-                self.indexInfoDelegate?.getError(isCorrect: true)
+        var indexInfoList : [ResponseModelIndexInfo] = []
+        let myXml = SWXMLHash.parse(xmlData)
+        let body =  myXml["soap:Envelope"]["soap:Body"]["GetForexStocksandIndexesInfoResponse"]["GetForexStocksandIndexesInfoResult"]["RequestResult"]["Success"].element
+        if !Bool((body?.text)!)! {
+                self.indexInfoDelegate?.IndexInfoDelegate(isCorrect: false, data: [], message: "")
             }
             for elem in myXml["soap:Envelope"]["soap:Body"]["GetForexStocksandIndexesInfoResponse"]["GetForexStocksandIndexesInfoResult"]["StocknIndexesResponseList"]["StockandIndex"].all {
-                let model = ResponseModelIndexInfo()
+             
+                var model = ResponseModelIndexInfo()
                 if let symbol = elem["Symbol"].element!.text as? String {
                     model.symbol = symbol
                 }
-                if elem["Hour"].element?.text != "" {
-                    model.hour = Int(elem["Hour"].element!.text)!
+                if let hour = elem["Hour"].element?.text {
+                    model.hour = Int(hour)!
                 }
-                if elem["Price"].element?.text != "" {
-                    model.price = Double(elem["Price"].element!.text)!
+                if let price = elem["Price"].element?.text{
+                    model.price = Double(price)!
                 }
-                if elem["Difference"].element?.text != "" {
-                    model.difference = Double(elem["Difference"].element!.text)!
+                if let difference =  elem["Difference"].element?.text{
+                    model.difference = Double(difference)!
                     if (elem["Difference"].element?.text.contains("-"))!{
-                        model.imageOfState = #imageLiteral(resourceName: "arrred")
+                        model.imageOfState = #imageLiteral(resourceName: "chevron-arrow-down")
                     }
                     else{
-                        model.imageOfState = #imageLiteral(resourceName: "arrgreen")
+                        model.imageOfState = #imageLiteral(resourceName: "chevron-arrow-up")
                     }
                 }
-                if elem["Volume"].element?.text != "" {
-                    model.volume = Double(elem["Volume"].element!.text)!
-                    
+                if let volume = elem["Volume"].element?.text{
+                    model.volume = Double(volume)!
                 }
-                if let buying =  elem["Buying"].element?.text as? Double{
-                    model.buying = buying
+                if let buying =  elem["Buying"].element?.text{
+                    model.buying = Double(buying)!
                 }
-                if elem["Selling"].element?.text != "" {
-                    model.selling = Double(elem["Selling"].element!.text)!
+                if let selling = elem["Selling"].element?.text{
+                    model.selling = Double(selling)!
                 }
-                if elem["DayPeakPrice"].element?.text != "" {
-                    model.dayPeakPrice = Double(elem["DayPeakPrice"].element!.text)!
+                if let daypeakPrice elem["DayPeakPrice"].element?.text{
+                    model.dayPeakPrice = Double(daypeakPrice)!
                 }
-                if elem["DayLowestPrice"].element?.text != "" {
-                    model.dayLowestPrice = Double(elem["DayLowestPrice"].element!.text)!
+                if let daylowestPrice = elem["DayLowestPrice"].element?.text{
+                    model.dayLowestPrice = Double(daylowestPrice)!
                 }
-                if elem["Total"].element?.text != "" {
-                    model.total = Int(elem["Total"].element!.text)!
+                if let total =  elem["Total"].element?.text{
+                    model.total = Int(total)!
                 }
-                if elem["IsIndex"].element?.text != "" {
-                    model.isIndex = Bool(elem["IsIndex"].element!.text)!
+                if let isIndex = elem["IsIndex"].element?.text{
+                    model.isIndex = Bool(isIndex)!
                 }
-                
-                self.tempItemOfIndex.append(model)
-                
+               indexInfoList.append(model)
             }
-            self.indexDelegate?.didRecieveDataUpdate(model: self.tempItemOfIndex)
-     
-            
-        
+        self.indexInfoDelegate?.IndexInfoDelegate(isCorrect: true, data: indexInfoList, message: "")
     }
     func getError(errMessage: String) {
-        
+        print("service error")
     }
 }
