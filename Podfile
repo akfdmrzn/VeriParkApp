@@ -6,8 +6,11 @@ target 'veriParkAkif' do
   use_frameworks!
 
   # Pods for veriParkAkif
-pod 'SideMenu'
-pod 'IQKeyboardManagerSwift'
+  pod 'Alamofire'
+  pod 'SWXMLHash'
+  pod 'AEXML'
+  pod 'SideMenu'
+  pod 'IQKeyboardManagerSwift'
 
   target 'veriParkAkifTests' do
     inherit! :search_paths

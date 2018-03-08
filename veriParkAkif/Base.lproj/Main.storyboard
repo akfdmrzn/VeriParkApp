@@ -30,7 +30,7 @@
         <!--Anasayfa-->
         <scene sceneID="I9L-0G-9xl">
             <objects>
-                <viewController id="dsc-Mg-iJf" sceneMemberID="viewController">
+                <viewController id="dsc-Mg-iJf" customClass="MainPageViewController" customModule="veriParkAkif" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7kG-7n-G5v"/>
                         <viewControllerLayoutGuide type="bottom" id="5k8-nd-Iai"/>
@@ -94,7 +94,7 @@
         <!--Item 1-->
         <scene sceneID="Gd8-cN-e7d">
             <objects>
-                <viewController id="Zfg-d3-sho" sceneMemberID="viewController">
+                <viewController id="Zfg-d3-sho" customClass="IndexInfoDetailViewController" customModule="veriParkAkif" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tbG-dq-chI"/>
                         <viewControllerLayoutGuide type="bottom" id="vvw-09-EGc"/>

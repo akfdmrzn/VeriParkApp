@@ -39,7 +39,7 @@ class CustomLabel: UILabel {
 //            fontName = "'GothamNarrow-Book'"
 //            return "GothamNarrow-Book"
 //        }
-//    }
+//    }v
     
 //    override var attributedText: NSAttributedString? {
 //        didSet {
