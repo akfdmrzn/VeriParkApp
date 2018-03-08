@@ -39,41 +39,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zw1-dv-epa" customClass="CustomButton" customModule="veriParkAkif" customModuleProvider="target">
-                                <rect key="frame" x="37.5" y="128" width="300" height="66.5"/>
-                                <state key="normal" title="IMKB Hisse Senetleri/Endeksler ">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="buttonTextFontSize">
-                                        <real key="value" value="17"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tWO-o4-0ob">
+                                <rect key="frame" x="37.5" y="160" width="300" height="333.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Zw1-dv-epa" firstAttribute="height" secondItem="fy0-af-26f" secondAttribute="height" multiplier="0.1" id="J5s-SF-NYR"/>
-                            <constraint firstItem="Zw1-dv-epa" firstAttribute="centerX" secondItem="fy0-af-26f" secondAttribute="centerX" id="YWx-KN-IhU"/>
-                            <constraint firstItem="Zw1-dv-epa" firstAttribute="top" secondItem="7kG-7n-G5v" secondAttribute="bottom" multiplier="2" id="gmI-WM-21f"/>
-                            <constraint firstItem="Zw1-dv-epa" firstAttribute="width" secondItem="fy0-af-26f" secondAttribute="width" multiplier="0.8" id="jaf-bv-rP5"/>
+                            <constraint firstItem="tWO-o4-0ob" firstAttribute="width" secondItem="fy0-af-26f" secondAttribute="width" multiplier="0.8" id="V3A-Re-EbZ"/>
+                            <constraint firstItem="tWO-o4-0ob" firstAttribute="top" secondItem="7kG-7n-G5v" secondAttribute="bottom" multiplier="2.5" id="nAn-u7-06l"/>
+                            <constraint firstItem="tWO-o4-0ob" firstAttribute="height" secondItem="fy0-af-26f" secondAttribute="height" multiplier="0.5" id="vdo-Bi-OIo"/>
+                            <constraint firstItem="tWO-o4-0ob" firstAttribute="centerX" secondItem="fy0-af-26f" secondAttribute="centerX" id="w40-gq-i5U"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Anasayfa" image="homepage" id="al1-3P-PZB"/>
+                    <connections>
+                        <outlet property="tableviewOfChoose" destination="tWO-o4-0ob" id="lID-B8-oqF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KLp-Rp-Kw2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-122.40000000000001" y="1321.8890554722639"/>
+            <point key="canvasLocation" x="-114.40000000000001" y="1268.8155922038982"/>
         </scene>
         <!--Index Detail View Controller-->
         <scene sceneID="Fcf-nL-wML">
@@ -115,7 +101,7 @@
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RbI-OA-rnj" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="118" width="375" height="33.5"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.81661184210000004" green="0.81661184210000004" blue="0.81661184210000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -126,86 +112,86 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sembol" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Cs-Ed-p0t" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
-                                <rect key="frame" x="47" y="129" width="37.5" height="12"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="47" y="118.5" width="37.5" height="33.5"/>
+                                <color key="backgroundColor" red="0.81661184210000004" green="0.81661184210000004" blue="0.81661184210000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
-                                        <real key="value" value="14"/>
+                                        <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fiyat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgH-rs-ZZ9" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
-                                <rect key="frame" x="94" y="129" width="37.5" height="12"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="94" y="118.5" width="37.5" height="33.5"/>
+                                <color key="backgroundColor" red="0.81661184210000004" green="0.81661184210000004" blue="0.81661184210000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
-                                        <real key="value" value="14"/>
+                                        <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fark" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w3Z-yC-qO0" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
-                                <rect key="frame" x="140.5" y="129" width="37.5" height="12"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="140.5" y="118.5" width="37.5" height="33.5"/>
+                                <color key="backgroundColor" red="0.81661184210000004" green="0.81661184210000004" blue="0.81661184210000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
-                                        <real key="value" value="14"/>
+                                        <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hacim" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pPs-Qr-2Kd" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
-                                <rect key="frame" x="187.5" y="129" width="37.5" height="12"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="188" y="118.5" width="37" height="33.5"/>
+                                <color key="backgroundColor" red="0.81661184210000004" green="0.81661184210000004" blue="0.81661184210000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
-                                        <real key="value" value="14"/>
+                                        <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alış" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Jz-NW-gTA" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
-                                <rect key="frame" x="234.5" y="129" width="37.5" height="12"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="235" y="118.5" width="37" height="33.5"/>
+                                <color key="backgroundColor" red="0.81661184210000004" green="0.81661184210000004" blue="0.81661184210000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
-                                        <real key="value" value="14"/>
+                                        <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Satış" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IS4-BH-Itx" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
-                                <rect key="frame" x="281.5" y="129" width="37.5" height="12"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="282" y="118.5" width="37" height="33.5"/>
+                                <color key="backgroundColor" red="0.81661184210000004" green="0.81661184210000004" blue="0.81661184210000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
-                                        <real key="value" value="14"/>
+                                        <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tarih" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hq5-Ff-Nme" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
-                                <rect key="frame" x="328" y="129.5" width="37.5" height="12"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="328.5" y="119" width="37" height="33.5"/>
+                                <color key="backgroundColor" red="0.81661184210000004" green="0.81661184210000004" blue="0.81661184210000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
-                                        <real key="value" value="14"/>
+                                        <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
@@ -228,9 +214,10 @@
                             <constraint firstItem="cEs-J2-A6s" firstAttribute="height" secondItem="gw3-P8-JzY" secondAttribute="height" multiplier="0.08" id="IEl-u4-1Ct"/>
                             <constraint firstItem="1Jz-NW-gTA" firstAttribute="width" secondItem="pPs-Qr-2Kd" secondAttribute="width" id="Jdg-q4-aly"/>
                             <constraint firstItem="w3Z-yC-qO0" firstAttribute="height" secondItem="xgH-rs-ZZ9" secondAttribute="height" id="JhP-3p-dMN"/>
+                            <constraint firstItem="4Cs-Ed-p0t" firstAttribute="height" secondItem="RbI-OA-rnj" secondAttribute="height" id="Kw6-fA-6LQ"/>
                             <constraint firstItem="w3Z-yC-qO0" firstAttribute="centerX" secondItem="gw3-P8-JzY" secondAttribute="centerX" multiplier="0.85" id="MQ2-0I-UNn"/>
+                            <constraint firstItem="xgH-rs-ZZ9" firstAttribute="width" secondItem="gw3-P8-JzY" secondAttribute="width" multiplier="0.1" id="Nt5-Fb-eOO"/>
                             <constraint firstItem="RbI-OA-rnj" firstAttribute="leading" secondItem="gw3-P8-JzY" secondAttribute="leading" id="P3r-z1-Pm8"/>
-                            <constraint firstItem="xgH-rs-ZZ9" firstAttribute="width" secondItem="4Cs-Ed-p0t" secondAttribute="width" id="PWI-Ke-jdZ"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="RbI-OA-rnj" secondAttribute="trailing" id="QSO-VR-i5r"/>
                             <constraint firstItem="Hq5-Ff-Nme" firstAttribute="width" secondItem="IS4-BH-Itx" secondAttribute="width" id="RUF-mn-X4t"/>
                             <constraint firstItem="pPs-Qr-2Kd" firstAttribute="centerY" secondItem="w3Z-yC-qO0" secondAttribute="centerY" id="TTk-5c-2lr"/>
@@ -262,7 +249,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ptz-Gn-t8N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="881" y="1276"/>
+            <point key="canvasLocation" x="735" y="1269"/>
         </scene>
         <!--Custom Tab Bar Controller-->
         <scene sceneID="7QQ-RS-9bi">
@@ -270,6 +257,7 @@
                 <tabBarController id="NDj-Gs-7qG" customClass="CustomTabBarController" customModule="veriParkAkif" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="iMy-8H-tPD">
                         <barButtonItem key="leftBarButtonItem" image="menu" id="80X-KU-jAV">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="joG-ST-7pt" kind="presentation" modalPresentationStyle="fullScreen" id="iW6-rN-7CJ"/>
                             </connections>

@@ -36,7 +36,7 @@ class ImkbValueCellTableViewCell: UITableViewCell {
         self.labelSell.text = String(item.selling)
         self.labelTime.text = String(item.hour)
         self.labelDifference.text = String(item.difference)
-        self.labelPrice.text = String(item.price)
+        self.labelPrice.text = "\(String(item.price)) TL"
         self.labelVolume.text = String(item.volume)
         self.imageViewOfState.image = item.imageOfState
         

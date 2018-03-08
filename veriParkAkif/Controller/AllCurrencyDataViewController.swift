@@ -49,7 +49,7 @@ extension AllCurrencyDataViewController : IndexInfoDelegate{
 }
 extension AllCurrencyDataViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return self.view.frame.height * 0.03
+        return self.view.frame.height * 0.002
         
     }
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
@@ -57,7 +57,7 @@ extension AllCurrencyDataViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return self.tableViewOfIndex.frame.height * 0.2
+        return self.tableViewOfIndex.frame.height * 0.1
     }
 }
 extension AllCurrencyDataViewController: UITableViewDataSource {
