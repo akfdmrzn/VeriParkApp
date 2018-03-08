@@ -23,6 +23,8 @@ extension MainPageViewController : EncryptDelegate{
     func isEncrypted(isCorrect: Bool, data: String, message: String) {
         if isCorrect{
             print(data)
+            encryptedData = data
+            
         }
         else{
             print("error data")

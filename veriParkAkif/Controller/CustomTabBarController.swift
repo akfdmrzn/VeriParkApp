@@ -15,7 +15,7 @@ class CustomTabBarController: UITabBarController {
 
         let imageView = UIImageView(image: UIImage(named: "veriparklogo"))
         imageView.contentMode = UIViewContentMode.scaleAspectFit
-        let titleView = UIView(frame: CGRect(x: 0, y: 0, width: (self.navigationController?.navigationBar.frame.width)!, height: (self.navigationController?.navigationBar.frame.height)!))
+        let titleView = UIView(frame: CGRect(x: 0, y: 0, width: (self.navigationController?.navigationBar.frame.width)!/3.0, height: (self.navigationController?.navigationBar.frame.height)!))
         imageView.frame = titleView.bounds
         titleView.addSubview(imageView)
         self.navigationItem.titleView = titleView

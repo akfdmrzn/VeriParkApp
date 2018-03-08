@@ -64,7 +64,9 @@ class ModelIndexInfo: ConnectionDelegate {
                     model.symbol = symbol
                 }
                 if let hour = elem["Hour"].element?.text {
-                    model.hour = Int(hour)!
+                    if hour != ""{
+                        model.hour = Int(hour)!
+                    }
                 }
                 if let price = elem["Price"].element?.text{
                     model.price = Double(price)!
@@ -87,7 +89,7 @@ class ModelIndexInfo: ConnectionDelegate {
                 if let selling = elem["Selling"].element?.text{
                     model.selling = Double(selling)!
                 }
-                if let daypeakPrice elem["DayPeakPrice"].element?.text{
+                if let daypeakPrice = elem["DayPeakPrice"].element?.text{
                     model.dayPeakPrice = Double(daypeakPrice)!
                 }
                 if let daylowestPrice = elem["DayLowestPrice"].element?.text{

@@ -33,7 +33,8 @@
 		CB08386520511A500013F61D /* ResponseModelEncrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB08386420511A500013F61D /* ResponseModelEncrypt.swift */; };
 		CB08386720511AA80013F61D /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB08386620511AA80013F61D /* BaseController.swift */; };
 		CBFBCEE820512947007B7EB1 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFBCEE720512947007B7EB1 /* MainPageViewController.swift */; };
-		CBFBCEEA205130B8007B7EB1 /* IndexInfoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFBCEE9205130B8007B7EB1 /* IndexInfoDetailViewController.swift */; };
+		CBFBCEEA205130B8007B7EB1 /* AllCurrencyDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFBCEE9205130B8007B7EB1 /* AllCurrencyDataViewController.swift */; };
+		CBFBCEEC20514D29007B7EB1 /* IndexDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFBCEEB20514D29007B7EB1 /* IndexDetailViewController.swift */; };
 		CCF94746173309537717BB74 /* Pods_veriParkAkif.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C871CD5C0A5F329AF95DD3E /* Pods_veriParkAkif.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,7 +84,8 @@
 		CB08386420511A500013F61D /* ResponseModelEncrypt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModelEncrypt.swift; sourceTree = "<group>"; };
 		CB08386620511AA80013F61D /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		CBFBCEE720512947007B7EB1 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
-		CBFBCEE9205130B8007B7EB1 /* IndexInfoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexInfoDetailViewController.swift; sourceTree = "<group>"; };
+		CBFBCEE9205130B8007B7EB1 /* AllCurrencyDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCurrencyDataViewController.swift; sourceTree = "<group>"; };
+		CBFBCEEB20514D29007B7EB1 /* IndexDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,7 +186,8 @@
 				CB083828205026810013F61D /* CustomTabBarController.swift */,
 				CB08386620511AA80013F61D /* BaseController.swift */,
 				CBFBCEE720512947007B7EB1 /* MainPageViewController.swift */,
-				CBFBCEE9205130B8007B7EB1 /* IndexInfoDetailViewController.swift */,
+				CBFBCEE9205130B8007B7EB1 /* AllCurrencyDataViewController.swift */,
+				CBFBCEEB20514D29007B7EB1 /* IndexDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -461,11 +464,12 @@
 				CB08385C2051106F0013F61D /* ResponseModelIndexInfo.swift in Sources */,
 				CB08385620503EE50013F61D /* CustomImageView.swift in Sources */,
 				CB08386320511A400013F61D /* ModelEncrypt.swift in Sources */,
-				CBFBCEEA205130B8007B7EB1 /* IndexInfoDetailViewController.swift in Sources */,
+				CBFBCEEA205130B8007B7EB1 /* AllCurrencyDataViewController.swift in Sources */,
 				CB08385820503EE50013F61D /* CustomLabel.swift in Sources */,
 				CB08385520503EE50013F61D /* CustomUIView.swift in Sources */,
 				CB08385A205110580013F61D /* ModelIndexInfo.swift in Sources */,
 				CBFBCEE820512947007B7EB1 /* MainPageViewController.swift in Sources */,
+				CBFBCEEC20514D29007B7EB1 /* IndexDetailViewController.swift in Sources */,
 				CB083860205111C70013F61D /* ConnectionDelegate.swift in Sources */,
 				C54E94BC1F8BFC910034F987 /* AppDelegate.swift in Sources */,
 				CB08385E205111C00013F61D /* PostConnection.swift in Sources */,

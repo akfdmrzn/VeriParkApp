@@ -41,7 +41,9 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zw1-dv-epa" customClass="CustomButton" customModule="veriParkAkif" customModuleProvider="target">
                                 <rect key="frame" x="37.5" y="128" width="300" height="66.5"/>
-                                <state key="normal" title="IMKB Hisse Senetleri/Endeksler "/>
+                                <state key="normal" title="IMKB Hisse Senetleri/Endeksler ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="2"/>
@@ -50,7 +52,7 @@
                                         <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="buttonTextFontSize">
-                                        <real key="value" value="40"/>
+                                        <real key="value" value="17"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="YES"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -67,16 +69,16 @@
                             <constraint firstItem="Zw1-dv-epa" firstAttribute="width" secondItem="fy0-af-26f" secondAttribute="width" multiplier="0.8" id="jaf-bv-rP5"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Anasayfa" id="al1-3P-PZB"/>
+                    <tabBarItem key="tabBarItem" title="Anasayfa" image="homepage" id="al1-3P-PZB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KLp-Rp-Kw2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-122.40000000000001" y="1321.8890554722639"/>
         </scene>
-        <!--View Controller-->
+        <!--Index Detail View Controller-->
         <scene sceneID="Fcf-nL-wML">
             <objects>
-                <viewController id="Azx-D6-JuI" sceneMemberID="viewController">
+                <viewController id="Azx-D6-JuI" customClass="IndexDetailViewController" customModule="veriParkAkif" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VJa-5z-0FJ"/>
                         <viewControllerLayoutGuide type="bottom" id="GLC-OJ-Kmz"/>
@@ -89,12 +91,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Mq-QS-V3w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-116" y="2005"/>
+            <point key="canvasLocation" x="609" y="2054"/>
         </scene>
-        <!--Item 1-->
+        <!--Hisseler-->
         <scene sceneID="Gd8-cN-e7d">
             <objects>
-                <viewController id="Zfg-d3-sho" customClass="IndexInfoDetailViewController" customModule="veriParkAkif" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Zfg-d3-sho" customClass="AllCurrencyDataViewController" customModule="veriParkAkif" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tbG-dq-chI"/>
                         <viewControllerLayoutGuide type="bottom" id="vvw-09-EGc"/>
@@ -103,24 +105,164 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="cEs-J2-A6s">
+                                <rect key="frame" x="0.0" y="64" width="375" height="54"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="byE-c8-Sid">
-                                <rect key="frame" x="37.5" y="128" width="300" height="467"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="0.0" y="151.5" width="375" height="466.5"/>
+                                <color key="backgroundColor" red="0.81661184210000004" green="0.81661184210000004" blue="0.81661184210000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RbI-OA-rnj" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="118" width="375" height="33.5"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sembol" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Cs-Ed-p0t" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
+                                <rect key="frame" x="47" y="129" width="37.5" height="12"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fiyat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgH-rs-ZZ9" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
+                                <rect key="frame" x="94" y="129" width="37.5" height="12"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fark" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w3Z-yC-qO0" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
+                                <rect key="frame" x="140.5" y="129" width="37.5" height="12"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hacim" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pPs-Qr-2Kd" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
+                                <rect key="frame" x="187.5" y="129" width="37.5" height="12"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alış" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Jz-NW-gTA" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
+                                <rect key="frame" x="234.5" y="129" width="37.5" height="12"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Satış" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IS4-BH-Itx" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
+                                <rect key="frame" x="281.5" y="129" width="37.5" height="12"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tarih" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hq5-Ff-Nme" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
+                                <rect key="frame" x="328" y="129.5" width="37.5" height="12"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="byE-c8-Sid" firstAttribute="width" secondItem="gw3-P8-JzY" secondAttribute="width" multiplier="0.8" id="Ga6-sV-zcJ"/>
-                            <constraint firstItem="byE-c8-Sid" firstAttribute="top" secondItem="tbG-dq-chI" secondAttribute="bottom" multiplier="2" id="OEK-G0-pWx"/>
+                            <constraint firstItem="RbI-OA-rnj" firstAttribute="top" secondItem="cEs-J2-A6s" secondAttribute="bottom" id="4OJ-fj-9Zo"/>
+                            <constraint firstItem="Hq5-Ff-Nme" firstAttribute="centerX" secondItem="gw3-P8-JzY" secondAttribute="centerX" multiplier="1.85" id="4Z4-l1-LXp"/>
+                            <constraint firstItem="IS4-BH-Itx" firstAttribute="centerX" secondItem="gw3-P8-JzY" secondAttribute="centerX" multiplier="1.6" id="79H-UP-SVA"/>
+                            <constraint firstItem="xgH-rs-ZZ9" firstAttribute="height" secondItem="4Cs-Ed-p0t" secondAttribute="height" id="7dG-Q8-A4O"/>
+                            <constraint firstItem="4Cs-Ed-p0t" firstAttribute="centerY" secondItem="RbI-OA-rnj" secondAttribute="centerY" id="8oE-DO-oDn"/>
+                            <constraint firstItem="1Jz-NW-gTA" firstAttribute="centerY" secondItem="pPs-Qr-2Kd" secondAttribute="centerY" id="9jw-6m-3Ml"/>
+                            <constraint firstItem="RbI-OA-rnj" firstAttribute="height" secondItem="gw3-P8-JzY" secondAttribute="height" multiplier="0.05" id="DQR-9Y-dEE"/>
+                            <constraint firstItem="xgH-rs-ZZ9" firstAttribute="centerX" secondItem="gw3-P8-JzY" secondAttribute="centerX" multiplier="0.6" id="FJ3-8q-u4R"/>
+                            <constraint firstItem="IS4-BH-Itx" firstAttribute="width" secondItem="1Jz-NW-gTA" secondAttribute="width" id="FUs-05-LhJ"/>
+                            <constraint firstItem="pPs-Qr-2Kd" firstAttribute="height" secondItem="w3Z-yC-qO0" secondAttribute="height" id="Fhf-t5-Goj"/>
+                            <constraint firstItem="vvw-09-EGc" firstAttribute="top" secondItem="byE-c8-Sid" secondAttribute="bottom" id="Fxa-B7-J8q"/>
+                            <constraint firstItem="byE-c8-Sid" firstAttribute="width" secondItem="gw3-P8-JzY" secondAttribute="width" id="Ga6-sV-zcJ"/>
+                            <constraint firstItem="w3Z-yC-qO0" firstAttribute="width" secondItem="xgH-rs-ZZ9" secondAttribute="width" id="GgY-Fr-g9r"/>
+                            <constraint firstItem="cEs-J2-A6s" firstAttribute="height" secondItem="gw3-P8-JzY" secondAttribute="height" multiplier="0.08" id="IEl-u4-1Ct"/>
+                            <constraint firstItem="1Jz-NW-gTA" firstAttribute="width" secondItem="pPs-Qr-2Kd" secondAttribute="width" id="Jdg-q4-aly"/>
+                            <constraint firstItem="w3Z-yC-qO0" firstAttribute="height" secondItem="xgH-rs-ZZ9" secondAttribute="height" id="JhP-3p-dMN"/>
+                            <constraint firstItem="w3Z-yC-qO0" firstAttribute="centerX" secondItem="gw3-P8-JzY" secondAttribute="centerX" multiplier="0.85" id="MQ2-0I-UNn"/>
+                            <constraint firstItem="RbI-OA-rnj" firstAttribute="leading" secondItem="gw3-P8-JzY" secondAttribute="leading" id="P3r-z1-Pm8"/>
+                            <constraint firstItem="xgH-rs-ZZ9" firstAttribute="width" secondItem="4Cs-Ed-p0t" secondAttribute="width" id="PWI-Ke-jdZ"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="RbI-OA-rnj" secondAttribute="trailing" id="QSO-VR-i5r"/>
+                            <constraint firstItem="Hq5-Ff-Nme" firstAttribute="width" secondItem="IS4-BH-Itx" secondAttribute="width" id="RUF-mn-X4t"/>
+                            <constraint firstItem="pPs-Qr-2Kd" firstAttribute="centerY" secondItem="w3Z-yC-qO0" secondAttribute="centerY" id="TTk-5c-2lr"/>
+                            <constraint firstItem="4Cs-Ed-p0t" firstAttribute="width" secondItem="gw3-P8-JzY" secondAttribute="width" multiplier="0.1" id="UTb-dK-7l5"/>
+                            <constraint firstItem="Hq5-Ff-Nme" firstAttribute="centerY" secondItem="IS4-BH-Itx" secondAttribute="centerY" id="WjM-oF-4Yi"/>
+                            <constraint firstItem="1Jz-NW-gTA" firstAttribute="centerX" secondItem="gw3-P8-JzY" secondAttribute="centerX" multiplier="1.35" id="XaR-JA-Mrp"/>
+                            <constraint firstItem="xgH-rs-ZZ9" firstAttribute="centerY" secondItem="4Cs-Ed-p0t" secondAttribute="centerY" id="Y9j-FK-1G1"/>
+                            <constraint firstItem="1Jz-NW-gTA" firstAttribute="height" secondItem="pPs-Qr-2Kd" secondAttribute="height" id="b4i-qy-mW5"/>
                             <constraint firstItem="byE-c8-Sid" firstAttribute="centerX" secondItem="gw3-P8-JzY" secondAttribute="centerX" id="b7H-2m-1Lj"/>
-                            <constraint firstItem="byE-c8-Sid" firstAttribute="height" secondItem="gw3-P8-JzY" secondAttribute="height" multiplier="0.7" id="tBO-cK-Kss"/>
+                            <constraint firstItem="pPs-Qr-2Kd" firstAttribute="width" secondItem="w3Z-yC-qO0" secondAttribute="width" id="bOw-gt-uD2"/>
+                            <constraint firstItem="cEs-J2-A6s" firstAttribute="top" secondItem="tbG-dq-chI" secondAttribute="bottom" id="box-6y-rh8"/>
+                            <constraint firstAttribute="trailing" secondItem="cEs-J2-A6s" secondAttribute="trailing" id="ckF-F5-Vdg"/>
+                            <constraint firstItem="IS4-BH-Itx" firstAttribute="centerY" secondItem="1Jz-NW-gTA" secondAttribute="centerY" id="cuP-vI-bcq"/>
+                            <constraint firstItem="4Cs-Ed-p0t" firstAttribute="centerX" secondItem="gw3-P8-JzY" secondAttribute="centerX" multiplier="0.35" id="dBe-28-u9i"/>
+                            <constraint firstItem="cEs-J2-A6s" firstAttribute="leading" secondItem="gw3-P8-JzY" secondAttribute="leading" id="h0P-0l-x2P"/>
+                            <constraint firstItem="Hq5-Ff-Nme" firstAttribute="height" secondItem="IS4-BH-Itx" secondAttribute="height" id="l3e-oE-UVj"/>
+                            <constraint firstItem="w3Z-yC-qO0" firstAttribute="centerY" secondItem="xgH-rs-ZZ9" secondAttribute="centerY" id="p9Y-So-xP4"/>
+                            <constraint firstItem="pPs-Qr-2Kd" firstAttribute="centerX" secondItem="gw3-P8-JzY" secondAttribute="centerX" multiplier="1.1" id="pcQ-Xg-71b"/>
+                            <constraint firstItem="byE-c8-Sid" firstAttribute="top" secondItem="RbI-OA-rnj" secondAttribute="bottom" id="slK-gv-wX3"/>
+                            <constraint firstItem="IS4-BH-Itx" firstAttribute="height" secondItem="1Jz-NW-gTA" secondAttribute="height" id="uXf-Du-JMB"/>
+                            <constraint firstItem="RbI-OA-rnj" firstAttribute="width" secondItem="gw3-P8-JzY" secondAttribute="width" id="vH3-No-8pB"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="LiA-rr-Lv0"/>
+                    <tabBarItem key="tabBarItem" title="Hisseler" image="profits" id="LiA-rr-Lv0"/>
+                    <connections>
+                        <outlet property="serachBar" destination="cEs-J2-A6s" id="3YT-fj-gmG"/>
+                        <outlet property="tableViewOfIndex" destination="byE-c8-Sid" id="gO7-3F-AK2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ptz-Gn-t8N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="608.79999999999995" y="1321.8890554722639"/>
+            <point key="canvasLocation" x="881" y="1276"/>
         </scene>
         <!--Custom Tab Bar Controller-->
         <scene sceneID="7QQ-RS-9bi">
@@ -139,8 +281,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Zfg-d3-sho" kind="relationship" relationship="viewControllers" id="pTd-s1-W4L"/>
-                        <segue destination="dsc-Mg-iJf" kind="relationship" relationship="viewControllers" id="Tff-3B-1ox"/>
+                        <segue destination="dsc-Mg-iJf" kind="relationship" relationship="viewControllers" id="td8-nT-pD9"/>
+                        <segue destination="Zfg-d3-sho" kind="relationship" relationship="viewControllers" id="pV4-To-vMf"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W0O-2c-5Ud" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -187,6 +329,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="homepage" width="32" height="32"/>
         <image name="menu" width="32" height="32"/>
+        <image name="profits" width="32" height="32"/>
     </resources>
 </document>

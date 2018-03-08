@@ -22,13 +22,14 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron-arrow-down" translatesAutoresizingMaskIntoConstraints="NO" id="tWx-Ne-YYM">
-                        <rect key="frame" x="2" y="18" width="35" height="35"/>
+                        <rect key="frame" x="2" y="25" width="21" height="21"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="tWx-Ne-YYM" secondAttribute="height" multiplier="1:1" id="zCE-PX-NVi"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eux-Jk-gHM" customClass="CustomLabel">
-                        <rect key="frame" x="42.5" y="0.5" width="42.5" height="70.5"/>
+                        <rect key="frame" x="53" y="0.5" width="42.5" height="70.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -39,7 +40,8 @@
                         </userDefinedRuntimeAttributes>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JrN-Mu-nwR" customClass="CustomLabel">
-                        <rect key="frame" x="94" y="0.0" width="42.5" height="70.5"/>
+                        <rect key="frame" x="105.5" y="0.0" width="42.5" height="70.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -50,7 +52,8 @@
                         </userDefinedRuntimeAttributes>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1c-NJ-xo0" customClass="CustomLabel">
-                        <rect key="frame" x="146" y="0.0" width="42.5" height="70.5"/>
+                        <rect key="frame" x="158.5" y="0.0" width="42.5" height="70.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -61,7 +64,8 @@
                         </userDefinedRuntimeAttributes>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxg-ne-kd1" customClass="CustomLabel">
-                        <rect key="frame" x="198" y="0.0" width="42.5" height="70.5"/>
+                        <rect key="frame" x="211.5" y="0.0" width="42.5" height="70.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -72,7 +76,8 @@
                         </userDefinedRuntimeAttributes>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDe-vE-kdm" customClass="CustomLabel">
-                        <rect key="frame" x="248" y="0.0" width="42.5" height="70.5"/>
+                        <rect key="frame" x="264.5" y="0.0" width="42.5" height="70.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -83,7 +88,8 @@
                         </userDefinedRuntimeAttributes>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGn-vG-1K3" customClass="CustomLabel">
-                        <rect key="frame" x="299.5" y="0.0" width="42.5" height="70.5"/>
+                        <rect key="frame" x="317" y="0.0" width="42.5" height="70.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -94,7 +100,8 @@
                         </userDefinedRuntimeAttributes>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40n-WY-amM" customClass="CustomLabel">
-                        <rect key="frame" x="352" y="0.0" width="42.5" height="70.5"/>
+                        <rect key="frame" x="370" y="0.0" width="42.5" height="70.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -105,37 +112,38 @@
                         </userDefinedRuntimeAttributes>
                     </label>
                 </subviews>
+                <color key="backgroundColor" red="0.81661184210526316" green="0.81661184210526316" blue="0.81661184210526316" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
+                    <constraint firstItem="pDe-vE-kdm" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="1.35" id="0cf-Zz-ygX"/>
                     <constraint firstItem="JrN-Mu-nwR" firstAttribute="width" secondItem="eux-Jk-gHM" secondAttribute="width" id="3ln-9k-sLG"/>
+                    <constraint firstItem="e1c-NJ-xo0" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="0.85" id="5Sr-Fy-kJe"/>
+                    <constraint firstItem="eux-Jk-gHM" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="0.35" id="AAo-sf-42y"/>
+                    <constraint firstItem="40n-WY-amM" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="1.85" id="AUD-hF-bJf"/>
                     <constraint firstItem="pDe-vE-kdm" firstAttribute="width" secondItem="pxg-ne-kd1" secondAttribute="width" id="BaW-EX-SC4"/>
-                    <constraint firstItem="40n-WY-amM" firstAttribute="leading" secondItem="dGn-vG-1K3" secondAttribute="trailing" multiplier="1.03" id="DGk-Xm-OJN"/>
                     <constraint firstItem="pxg-ne-kd1" firstAttribute="width" secondItem="e1c-NJ-xo0" secondAttribute="width" id="JFh-cm-9Lx"/>
-                    <constraint firstItem="JrN-Mu-nwR" firstAttribute="leading" secondItem="eux-Jk-gHM" secondAttribute="trailing" multiplier="1.1" id="Nk5-PS-yPP"/>
                     <constraint firstItem="dGn-vG-1K3" firstAttribute="height" secondItem="pDe-vE-kdm" secondAttribute="height" id="PN5-OL-qcB"/>
-                    <constraint firstItem="dGn-vG-1K3" firstAttribute="leading" secondItem="pDe-vE-kdm" secondAttribute="trailing" multiplier="1.03" id="SHF-fz-luE"/>
+                    <constraint firstItem="pxg-ne-kd1" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="1.1" id="Qnn-QD-vZt"/>
                     <constraint firstItem="eux-Jk-gHM" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" id="Tjb-ue-PMy"/>
                     <constraint firstItem="dGn-vG-1K3" firstAttribute="width" secondItem="pDe-vE-kdm" secondAttribute="width" id="UN3-Ym-1Rd"/>
-                    <constraint firstItem="e1c-NJ-xo0" firstAttribute="leading" secondItem="JrN-Mu-nwR" secondAttribute="trailing" multiplier="1.07" id="Vgh-WB-3sl"/>
+                    <constraint firstItem="JrN-Mu-nwR" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="0.6" id="UNx-Ew-lTG"/>
                     <constraint firstItem="dGn-vG-1K3" firstAttribute="centerY" secondItem="pDe-vE-kdm" secondAttribute="centerY" id="WVe-hJ-dck"/>
                     <constraint firstItem="e1c-NJ-xo0" firstAttribute="centerY" secondItem="JrN-Mu-nwR" secondAttribute="centerY" id="Wo4-rp-1I2"/>
                     <constraint firstItem="e1c-NJ-xo0" firstAttribute="height" secondItem="JrN-Mu-nwR" secondAttribute="height" id="Y6b-NX-A3E"/>
                     <constraint firstItem="tWx-Ne-YYM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="2" id="Yoj-V1-lw0"/>
                     <constraint firstItem="eux-Jk-gHM" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="b0t-dd-Dhc"/>
                     <constraint firstItem="pDe-vE-kdm" firstAttribute="height" secondItem="pxg-ne-kd1" secondAttribute="height" id="cYB-CY-1aJ"/>
-                    <constraint firstItem="pDe-vE-kdm" firstAttribute="leading" secondItem="pxg-ne-kd1" secondAttribute="trailing" multiplier="1.03" id="emE-HL-PsC"/>
                     <constraint firstItem="JrN-Mu-nwR" firstAttribute="centerY" secondItem="eux-Jk-gHM" secondAttribute="centerY" id="f8Y-ye-qUl"/>
-                    <constraint firstItem="pxg-ne-kd1" firstAttribute="leading" secondItem="e1c-NJ-xo0" secondAttribute="trailing" multiplier="1.05" id="gLp-xl-ZU7"/>
                     <constraint firstItem="e1c-NJ-xo0" firstAttribute="width" secondItem="JrN-Mu-nwR" secondAttribute="width" id="hAh-PE-sma"/>
                     <constraint firstItem="pxg-ne-kd1" firstAttribute="height" secondItem="e1c-NJ-xo0" secondAttribute="height" id="kfZ-X7-70v"/>
                     <constraint firstItem="40n-WY-amM" firstAttribute="width" secondItem="dGn-vG-1K3" secondAttribute="width" id="kng-nX-3tP"/>
-                    <constraint firstItem="tWx-Ne-YYM" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.5" id="nYq-dl-sxI"/>
+                    <constraint firstItem="tWx-Ne-YYM" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.3" id="nYq-dl-sxI"/>
                     <constraint firstItem="40n-WY-amM" firstAttribute="centerY" secondItem="dGn-vG-1K3" secondAttribute="centerY" id="oyO-c5-uwF"/>
                     <constraint firstItem="tWx-Ne-YYM" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="pzL-rH-rL7"/>
                     <constraint firstItem="pDe-vE-kdm" firstAttribute="centerY" secondItem="pxg-ne-kd1" secondAttribute="centerY" id="qax-mN-MXq"/>
                     <constraint firstItem="JrN-Mu-nwR" firstAttribute="height" secondItem="eux-Jk-gHM" secondAttribute="height" id="uSu-do-8rt"/>
-                    <constraint firstItem="eux-Jk-gHM" firstAttribute="leading" secondItem="tWx-Ne-YYM" secondAttribute="trailing" multiplier="1.15" id="vIa-g7-Uso"/>
                     <constraint firstItem="40n-WY-amM" firstAttribute="height" secondItem="dGn-vG-1K3" secondAttribute="height" id="w5J-bj-NOg"/>
                     <constraint firstItem="pxg-ne-kd1" firstAttribute="centerY" secondItem="e1c-NJ-xo0" secondAttribute="centerY" id="wds-TV-X2r"/>
+                    <constraint firstItem="dGn-vG-1K3" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="1.6" id="xcm-ZY-hg2"/>
                     <constraint firstItem="eux-Jk-gHM" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.1" id="ygZ-t0-1O7"/>
                 </constraints>
             </tableViewCellContentView>
