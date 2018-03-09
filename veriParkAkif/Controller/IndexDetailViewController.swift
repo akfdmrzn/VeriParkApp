@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import SwiftChart
+
 
 class IndexDetailViewController: BaseController {
 
+    @IBOutlet weak var viewOfChart: Chart!
     @IBOutlet weak var labelOfSymbolName: CustomLabel!
     @IBOutlet weak var labelOfPrice: CustomLabel!
     @IBOutlet weak var labelOfChange: CustomLabel!
@@ -22,10 +25,14 @@ class IndexDetailViewController: BaseController {
     
     var infoIndex = ResponseModelIndexInfo()
     var graphDateList = [ResponseModelPeriod]()
-    var modelPeriod  = ModelOfPeriod()
+    var modelPeriod  = ModelOfPeriod() //Servisteki model
+    var modelPeriodMonth = ModelOfPeriodMonth() //Elle kendim data girdiğim model
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.modelPeriodMonth.createDate()
+        self.setMyManualDataForGraph()
         
         self.labelOfSymbolName.text = self.infoIndex.symbol
         self.labelOfTitle.text = self.infoIndex.symbol
@@ -46,9 +53,26 @@ class IndexDetailViewController: BaseController {
         
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    func setMyManualDataForGraph(){
         
+        
+//        let data = [
+//            (x: self.modelPeriodMonth.dateList[0].price, y: self.modelPeriodMonth.dateList[0].date),
+//            (x: self.modelPeriodMonth.dateList[1].price, y: self.modelPeriodMonth.dateList[1].date),
+//            (x: self.modelPeriodMonth.dateList[2].price, y: self.modelPeriodMonth.dateList[2].date),
+//            (x: self.modelPeriodMonth.dateList[3].price, y: self.modelPeriodMonth.dateList[3].date),
+//            (x: self.modelPeriodMonth.dateList[4].price, y: self.modelPeriodMonth.dateList[4].date),
+//            (x: self.modelPeriodMonth.dateList[5].price, y: self.modelPeriodMonth.dateList[5].date),
+//            (x: self.modelPeriodMonth.dateList[6].price, y: self.modelPeriodMonth.dateList[6].date),
+//            (x: self.modelPeriodMonth.dateList[7].price, y: self.modelPeriodMonth.dateList[7].date)
+//        ]
+        let series = ChartSeries([0, 6, 2, 8, 4, 7, 3, 10, 8])
+        series.area = true
+        self.viewOfChart.add(series)
+        
+
+        self.viewOfChart.xLabels = [self.modelPeriodMonth.dateList[0].date,self.modelPeriodMonth.dateList[1].date,self.modelPeriodMonth.dateList[2].date,self.modelPeriodMonth.dateList[3].date,self.modelPeriodMonth.dateList[4].date,self.modelPeriodMonth.dateList[5].date,self.modelPeriodMonth.dateList[6].date,self.modelPeriodMonth.dateList[7].date]
+        self.viewOfChart.xLabelsFormatter = { String(Int(round($1))) + " Mart" }
     }
 }
 extension IndexDetailViewController : PeriodDelegate{
@@ -56,7 +80,7 @@ extension IndexDetailViewController : PeriodDelegate{
         self.indicatorShow(status: false)
         if isCorrect{
             self.graphDateList = data
-            print(self.graphDateList[0].date)
+            
         }
         else{
             

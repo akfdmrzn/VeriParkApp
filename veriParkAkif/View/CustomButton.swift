@@ -11,11 +11,22 @@ import UIKit
 @IBDesignable
 class CustomButton: UIButton {
     
-//    override func setTitle(_ title: String?, for state: UIControlState) {
-//        title
-//    }
+    var user = UserModel()
+
     
-    var fontName = "GothamNarrow-Book"
+    override func `self`() -> Self {
+        if user.nightModeEnabled {
+            backgroundColor?.cgColor = UIColor.black
+            setTitleColor(UIColor.white, for: .normal)
+        }
+        else{
+            backgroundColor?.cgColor = UIColor.white
+            setTitleColor(UIColor.black, for: .normal)
+        }
+    }
+    
+    
+    var fontName = "Helvetica-Bold"
     
     @IBInspectable var cornerRadius: CGFloat = 0 {
         didSet {

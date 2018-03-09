@@ -10,7 +10,20 @@ import UIKit
 
 class CustomLabel: UILabel {
     
+    var user = UserModel()
+    
     var fontName = "Helvetica"
+    
+    override func `self`() -> Self {
+        if user.nightModeEnabled {
+            backgroundColor?.cgColor = UIColor.black
+            textColor.cgColor = UIColor.white
+        }
+        else{
+            backgroundColor?.cgColor = UIColor.white
+            textColor.cgColor = UIColor.black
+        }
+    }
     
     @IBInspectable var iPhoneFontSize:CGFloat = 0 {
         didSet {

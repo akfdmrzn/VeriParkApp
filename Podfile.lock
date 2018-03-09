@@ -6,6 +6,7 @@ PODS:
     - NVActivityIndicatorView/Presenter (= 4.1.1)
   - NVActivityIndicatorView/Presenter (4.1.1)
   - SideMenu (3.1.5)
+  - SwiftChart (1.0.1)
   - SWXMLHash (4.4.1)
 
 DEPENDENCIES:
@@ -14,6 +15,7 @@ DEPENDENCIES:
   - IQKeyboardManagerSwift
   - NVActivityIndicatorView
   - SideMenu
+  - SwiftChart
   - SWXMLHash
 
 SPEC CHECKSUMS:
@@ -22,8 +24,9 @@ SPEC CHECKSUMS:
   IQKeyboardManagerSwift: 30fb3a61de1af53a95e02b80fb54ed0a19d5ede5
   NVActivityIndicatorView: 60109b9bf46efc2e71ab81453196ccdfdfeea870
   SideMenu: 47dbf9e4d878062d8994aed43f6e4bf6c1fea30b
+  SwiftChart: ba767a678d568a5ee22d419e146a0582865e1aff
   SWXMLHash: 93e01dafa5ea11c21aa34ad5bd6714dd72f70c2a
 
-PODFILE CHECKSUM: d5fbcaedddfc4807bcc8ddd8c59d128cb9ab74df
+PODFILE CHECKSUM: aa15d689a707f713bf8d583483e63751aa153551
 
 COCOAPODS: 1.4.0

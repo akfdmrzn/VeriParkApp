@@ -12,6 +12,7 @@ target 'veriParkAkif' do
   pod 'SideMenu'
   pod 'IQKeyboardManagerSwift'
   pod 'NVActivityIndicatorView'
+  pod "SwiftChart"
   
   target 'veriParkAkifTests' do
     inherit! :search_paths

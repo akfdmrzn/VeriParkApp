@@ -37,6 +37,8 @@
 		CBFBCEE820512947007B7EB1 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFBCEE720512947007B7EB1 /* MainPageViewController.swift */; };
 		CBFBCEEA205130B8007B7EB1 /* AllCurrencyDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFBCEE9205130B8007B7EB1 /* AllCurrencyDataViewController.swift */; };
 		CBFBCEEC20514D29007B7EB1 /* IndexDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFBCEEB20514D29007B7EB1 /* IndexDetailViewController.swift */; };
+		CBFBCEEE2052669F007B7EB1 /* ModelOfPeriodMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFBCEED2052669F007B7EB1 /* ModelOfPeriodMonth.swift */; };
+		CBFBCEF020527FC5007B7EB1 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFBCEEF20527FC5007B7EB1 /* UserModel.swift */; };
 		CCF94746173309537717BB74 /* Pods_veriParkAkif.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C871CD5C0A5F329AF95DD3E /* Pods_veriParkAkif.framework */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +92,8 @@
 		CBFBCEE720512947007B7EB1 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		CBFBCEE9205130B8007B7EB1 /* AllCurrencyDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCurrencyDataViewController.swift; sourceTree = "<group>"; };
 		CBFBCEEB20514D29007B7EB1 /* IndexDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexDetailViewController.swift; sourceTree = "<group>"; };
+		CBFBCEED2052669F007B7EB1 /* ModelOfPeriodMonth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelOfPeriodMonth.swift; sourceTree = "<group>"; };
+		CBFBCEEF20527FC5007B7EB1 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +206,8 @@
 				CB083859205110580013F61D /* ModelIndexInfo.swift */,
 				CB08386220511A400013F61D /* ModelEncrypt.swift */,
 				C553101D2051E631001D2A98 /* ModelOfPeriod.swift */,
+				CBFBCEED2052669F007B7EB1 /* ModelOfPeriodMonth.swift */,
+				CBFBCEEF20527FC5007B7EB1 /* UserModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -398,6 +404,7 @@
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework",
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftChart/SwiftChart.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -407,6 +414,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWXMLHash.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftChart.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -476,8 +484,10 @@
 				CB08385820503EE50013F61D /* CustomLabel.swift in Sources */,
 				CB08385520503EE50013F61D /* CustomUIView.swift in Sources */,
 				CB08385A205110580013F61D /* ModelIndexInfo.swift in Sources */,
+				CBFBCEF020527FC5007B7EB1 /* UserModel.swift in Sources */,
 				CBFBCEE820512947007B7EB1 /* MainPageViewController.swift in Sources */,
 				CBFBCEEC20514D29007B7EB1 /* IndexDetailViewController.swift in Sources */,
+				CBFBCEEE2052669F007B7EB1 /* ModelOfPeriodMonth.swift in Sources */,
 				CB083860205111C70013F61D /* ConnectionDelegate.swift in Sources */,
 				C553101E2051E631001D2A98 /* ModelOfPeriod.swift in Sources */,
 				C54E94BC1F8BFC910034F987 /* AppDelegate.swift in Sources */,
