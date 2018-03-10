@@ -37,6 +37,10 @@
                             <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
                                 <real key="value" value="10"/>
                             </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="myTextColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JrN-Mu-nwR" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
@@ -49,6 +53,10 @@
                             <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
                                 <real key="value" value="11"/>
                             </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="myTextColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1c-NJ-xo0" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
@@ -61,6 +69,10 @@
                             <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
                                 <real key="value" value="11"/>
                             </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="myTextColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxg-ne-kd1" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
@@ -73,6 +85,10 @@
                             <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
                                 <real key="value" value="11"/>
                             </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="myTextColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.52" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDe-vE-kdm" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
@@ -85,6 +101,10 @@
                             <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
                                 <real key="value" value="11"/>
                             </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="myTextColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGn-vG-1K3" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
@@ -97,6 +117,10 @@
                             <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
                                 <real key="value" value="11"/>
                             </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="myTextColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40n-WY-amM" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
@@ -109,19 +133,33 @@
                             <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
                                 <real key="value" value="11"/>
                             </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="myTextColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgH-Ka-w3W" customClass="CustomLabel" customModule="veriParkAkif" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="68.5" width="423" height="2"/>
+                        <color key="backgroundColor" red="0.83855637169999997" green="0.83855637169999997" blue="0.83855637169999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.83855637169999997" green="0.83855637169999997" blue="0.83855637169999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
-                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="pDe-vE-kdm" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="1.4" id="0cf-Zz-ygX"/>
                     <constraint firstItem="e1c-NJ-xo0" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="0.8" id="5Sr-Fy-kJe"/>
                     <constraint firstItem="e1c-NJ-xo0" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.1" id="8Hv-go-u2u"/>
                     <constraint firstItem="eux-Jk-gHM" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="0.25" id="AAo-sf-42y"/>
                     <constraint firstItem="40n-WY-amM" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="1.85" id="AUD-hF-bJf"/>
+                    <constraint firstItem="hgH-Ka-w3W" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="AUs-fd-umf"/>
+                    <constraint firstItem="hgH-Ka-w3W" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.03" id="CkW-Hg-th1"/>
                     <constraint firstItem="JrN-Mu-nwR" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.15" id="KIW-0X-iS9"/>
                     <constraint firstItem="dGn-vG-1K3" firstAttribute="height" secondItem="pDe-vE-kdm" secondAttribute="height" id="PN5-OL-qcB"/>
                     <constraint firstItem="pxg-ne-kd1" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="1.1" id="Qnn-QD-vZt"/>
+                    <constraint firstAttribute="bottom" secondItem="hgH-Ka-w3W" secondAttribute="bottom" id="SXu-xL-Iyh"/>
                     <constraint firstItem="eux-Jk-gHM" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" id="Tjb-ue-PMy"/>
                     <constraint firstItem="pDe-vE-kdm" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.09" id="TwT-xm-XhA"/>
                     <constraint firstItem="dGn-vG-1K3" firstAttribute="width" secondItem="pDe-vE-kdm" secondAttribute="width" id="UN3-Ym-1Rd"/>
@@ -132,6 +170,7 @@
                     <constraint firstItem="tWx-Ne-YYM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="Yoj-V1-lw0"/>
                     <constraint firstItem="eux-Jk-gHM" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="b0t-dd-Dhc"/>
                     <constraint firstItem="pDe-vE-kdm" firstAttribute="height" secondItem="pxg-ne-kd1" secondAttribute="height" id="cYB-CY-1aJ"/>
+                    <constraint firstAttribute="trailing" secondItem="hgH-Ka-w3W" secondAttribute="trailing" id="d3a-bF-qze"/>
                     <constraint firstItem="JrN-Mu-nwR" firstAttribute="centerY" secondItem="eux-Jk-gHM" secondAttribute="centerY" id="f8Y-ye-qUl"/>
                     <constraint firstItem="pxg-ne-kd1" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.17" id="g6w-iE-g9l"/>
                     <constraint firstItem="pxg-ne-kd1" firstAttribute="height" secondItem="e1c-NJ-xo0" secondAttribute="height" id="kfZ-X7-70v"/>
@@ -147,6 +186,7 @@
                     <constraint firstItem="eux-Jk-gHM" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.1" id="ygZ-t0-1O7"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="imageViewOfState" destination="tWx-Ne-YYM" id="UGu-o6-mIg"/>

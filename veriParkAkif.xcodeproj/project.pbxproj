@@ -16,6 +16,9 @@
 		C54E94D11F8BFC910034F987 /* veriParkAkifTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E94D01F8BFC910034F987 /* veriParkAkifTests.swift */; };
 		C553101E2051E631001D2A98 /* ModelOfPeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C553101D2051E631001D2A98 /* ModelOfPeriod.swift */; };
 		C55310202051E641001D2A98 /* ResponseModelPeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C553101F2051E641001D2A98 /* ResponseModelPeriod.swift */; };
+		C5882F54205336C600E0A976 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5882F53205336C600E0A976 /* NavigationViewController.swift */; };
+		C5882F5620534B3300E0A976 /* NavigationBarSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5882F5520534B3300E0A976 /* NavigationBarSetup.swift */; };
+		C5882F5820534BD800E0A976 /* TabBarSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5882F5720534BD800E0A976 /* TabBarSetup.swift */; };
 		CB083827205026500013F61D /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB083826205026500013F61D /* LeftMenuViewController.swift */; };
 		CB083829205026810013F61D /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB083828205026810013F61D /* CustomTabBarController.swift */; };
 		CB08384920502EDD0013F61D /* ImkbDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB08384720502EDD0013F61D /* ImkbDetailTableViewCell.swift */; };
@@ -71,6 +74,9 @@
 		C54E94D21F8BFC910034F987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C553101D2051E631001D2A98 /* ModelOfPeriod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelOfPeriod.swift; sourceTree = "<group>"; };
 		C553101F2051E641001D2A98 /* ResponseModelPeriod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModelPeriod.swift; sourceTree = "<group>"; };
+		C5882F53205336C600E0A976 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		C5882F5520534B3300E0A976 /* NavigationBarSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarSetup.swift; sourceTree = "<group>"; };
+		C5882F5720534BD800E0A976 /* TabBarSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarSetup.swift; sourceTree = "<group>"; };
 		CB083826205026500013F61D /* LeftMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
 		CB083828205026810013F61D /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		CB08384720502EDD0013F61D /* ImkbDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImkbDetailTableViewCell.swift; sourceTree = "<group>"; };
@@ -183,6 +189,8 @@
 				CB08385320503EE50013F61D /* CustomLabel.swift */,
 				CB08385220503EE40013F61D /* CustomTextField.swift */,
 				CB08385020503EE40013F61D /* CustomUIView.swift */,
+				C5882F5520534B3300E0A976 /* NavigationBarSetup.swift */,
+				C5882F5720534BD800E0A976 /* TabBarSetup.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -196,6 +204,7 @@
 				CBFBCEE720512947007B7EB1 /* MainPageViewController.swift */,
 				CBFBCEE9205130B8007B7EB1 /* AllCurrencyDataViewController.swift */,
 				CBFBCEEB20514D29007B7EB1 /* IndexDetailViewController.swift */,
+				C5882F53205336C600E0A976 /* NavigationViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -307,6 +316,7 @@
 				TargetAttributes = {
 					C54E94B71F8BFC910034F987 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = UUR7FXLGL9;
 						ProvisioningStyle = Automatic;
 					};
 					C54E94CB1F8BFC910034F987 = {
@@ -488,13 +498,16 @@
 				CBFBCEE820512947007B7EB1 /* MainPageViewController.swift in Sources */,
 				CBFBCEEC20514D29007B7EB1 /* IndexDetailViewController.swift in Sources */,
 				CBFBCEEE2052669F007B7EB1 /* ModelOfPeriodMonth.swift in Sources */,
+				C5882F5620534B3300E0A976 /* NavigationBarSetup.swift in Sources */,
 				CB083860205111C70013F61D /* ConnectionDelegate.swift in Sources */,
 				C553101E2051E631001D2A98 /* ModelOfPeriod.swift in Sources */,
+				C5882F54205336C600E0A976 /* NavigationViewController.swift in Sources */,
 				C54E94BC1F8BFC910034F987 /* AppDelegate.swift in Sources */,
 				CB08385E205111C00013F61D /* PostConnection.swift in Sources */,
 				CB08386720511AA80013F61D /* BaseController.swift in Sources */,
 				CB08385720503EE50013F61D /* CustomTextField.swift in Sources */,
 				CB08384D20502FFA0013F61D /* ImkbValueCellTableViewCell.swift in Sources */,
+				C5882F5820534BD800E0A976 /* TabBarSetup.swift in Sources */,
 				CB083829205026810013F61D /* CustomTabBarController.swift in Sources */,
 				CB08386520511A500013F61D /* ResponseModelEncrypt.swift in Sources */,
 				CB08385420503EE50013F61D /* CustomButton.swift in Sources */,
@@ -642,6 +655,7 @@
 			baseConfigurationReference = 1341778C4F5CDE683F4F61FA /* Pods-veriParkAkif.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UUR7FXLGL9;
 				INFOPLIST_FILE = veriParkAkif/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = demirezen.veriParkAkif;
@@ -655,6 +669,7 @@
 			baseConfigurationReference = 31FC7AAB9BE8420D4433AFC9 /* Pods-veriParkAkif.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UUR7FXLGL9;
 				INFOPLIST_FILE = veriParkAkif/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = demirezen.veriParkAkif;

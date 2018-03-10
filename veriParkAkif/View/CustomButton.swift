@@ -11,19 +11,6 @@ import UIKit
 @IBDesignable
 class CustomButton: UIButton {
     
-    var user = UserModel()
-
-    
-    override func `self`() -> Self {
-        if user.nightModeEnabled {
-            backgroundColor?.cgColor = UIColor.black
-            setTitleColor(UIColor.white, for: .normal)
-        }
-        else{
-            backgroundColor?.cgColor = UIColor.white
-            setTitleColor(UIColor.black, for: .normal)
-        }
-    }
     
     
     var fontName = "Helvetica-Bold"

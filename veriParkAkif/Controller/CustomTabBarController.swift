@@ -10,9 +10,11 @@ import UIKit
 
 class CustomTabBarController: UITabBarController {
 
+    var user = UserModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         let imageView = UIImageView(image: UIImage(named: "veriparklogo"))
         imageView.contentMode = UIViewContentMode.scaleAspectFit
         let titleView = UIView(frame: CGRect(x: 0, y: 0, width: (self.navigationController?.navigationBar.frame.width)!/3.0, height: (self.navigationController?.navigationBar.frame.height)!))
@@ -20,8 +22,17 @@ class CustomTabBarController: UITabBarController {
         titleView.addSubview(imageView)
         self.navigationItem.titleView = titleView
         
+        
     }
 
+   
+    
+    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        if item.title == "Hisseler"{
+         isFirstOpen = false
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

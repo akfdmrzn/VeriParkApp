@@ -20,7 +20,7 @@ class ImkbValueCellTableViewCell: UITableViewCell {
     
     class var identifier: String { return String(describing: self) }
     class var nib: UINib { return UINib(nibName: identifier, bundle: nil)   }
-    
+    var user = UserModel()
     override func awakeFromNib() {
         super.awakeFromNib()
        
@@ -31,13 +31,14 @@ class ImkbValueCellTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     func configureWithItem(item : ResponseModelIndexInfo){
-        self.labelSymbolName.text = item.symbol
-        self.labelBuy.text = String(item.buying)
-        self.labelSell.text = String(item.selling)
-        self.labelTime.text = String(item.hour)
-        self.labelDifference.text = String(item.difference)
-        self.labelPrice.text = "\(String(item.price)) TL"
-        self.labelVolume.text = String(item.volume)
+        
+        self.labelSymbolName.text(name: item.symbol)
+        self.labelBuy.text(name :String(item.buying))
+        self.labelSell.text(name :String(item.selling))
+        self.labelTime.text(name :String(item.hour))
+        self.labelDifference.text(name :String(item.difference))
+        self.labelPrice.text(name :"\(String(item.price)) TL")
+        self.labelVolume.text(name :String(item.volume))
         self.imageViewOfState.image = item.imageOfState
         
     }

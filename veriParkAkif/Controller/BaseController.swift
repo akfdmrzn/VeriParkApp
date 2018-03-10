@@ -8,17 +8,23 @@
 
 import UIKit
 import NVActivityIndicatorView
-
-
-
 class BaseController: UIViewController {
     
-    var blurEffect = UIBlurEffect(style: UIBlurEffectStyle.dark)
+    var blurEffect = UIBlurEffect(style: UIBlurEffectStyle.light)
     var blurEffectView : UIVisualEffectView?
     var indicator :  NVActivityIndicatorView?
+    var user = UserModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if user.nightModeEnabled{
+            self.view.backgroundColor = UIColor.black
+        }
+        else{
+            self.view.backgroundColor = UIColor.white
+        }
+        self.indicatorShow(status: false)     
+        NotificationCenter.default.addObserver(self, selector: #selector(setEnableNight), name: NSNotification.Name(rawValue: "enableNightMode"), object: nil)
         
     }
     
@@ -41,5 +47,24 @@ class BaseController: UIViewController {
             indicator?.startAnimating()
         }
     }
+    @objc func setEnableNight(){
+        if user.nightModeEnabled{
+            self.view.backgroundColor = UIColor.black
+            UITabBar.appearance().barTintColor = UIColor.black
+            self.tabBarController?.tabBar.layoutIfNeeded()
+            self.view.updateFocusIfNeeded()
+            self.view.layoutIfNeeded()
+            
+        }
+        else{
+            UITabBar.appearance().barTintColor = UIColor.white
+            self.view.backgroundColor = UIColor.white
+            self.tabBarController?.tabBar.layoutIfNeeded()
+            self.view.updateFocusIfNeeded()
+            self.view.layoutIfNeeded()
+        }
+        }
+    
     
 }
+

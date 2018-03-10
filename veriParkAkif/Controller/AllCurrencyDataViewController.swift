@@ -8,8 +8,9 @@
 
 import UIKit
 var encryptedData : String = ""
-
+var isFirstOpen : Bool = true
 class AllCurrencyDataViewController: BaseController {
+    
     
     @IBOutlet weak var serachBar: UISearchBar!
     @IBOutlet weak var tableViewOfIndex: UITableView!
@@ -19,14 +20,17 @@ class AllCurrencyDataViewController: BaseController {
     var arrayOfSearch = [ResponseModelIndexInfo]()
     var isSearching = false
     
+    
     fileprivate var indexInfoList : [ResponseModelIndexInfo] = []{
         didSet{
                 self.tableViewOfIndex.reloadData()
         }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+  
+        isFirstOpen = true
         serachBar.returnKeyType = UIReturnKeyType.done
         serachBar.delegate = self
         
@@ -43,6 +47,20 @@ class AllCurrencyDataViewController: BaseController {
         
         
     }
+    override func viewWillAppear(_ animated: Bool) {
+        if user.nightModeEnabled{
+            self.serachBar.barStyle = .black
+        }
+        else{
+            self.serachBar.barStyle = .default
+        }
+        if !isFirstOpen{
+            self.modelIndexInfo.encryptedData = encryptedData
+            self.modelIndexInfo.sendDataToService()
+            self.indicatorShow(status: true)
+        }
+    }
+  
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destinationVC = segue.destination as! IndexDetailViewController
         destinationVC.infoIndex = self.choosenIndex

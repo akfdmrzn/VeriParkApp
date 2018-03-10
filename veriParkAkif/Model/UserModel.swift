@@ -13,13 +13,13 @@ class UserModel: NSObject {
     
    private var _nightModeEnabled : Bool = false
     
-    var nightModeEnabled : String {
+    var nightModeEnabled : Bool {
         get {
-            if let nightModeEnabled = UserDefaults.standard.value(forKey: "nightModeEnabled") as? String {
+            if let nightModeEnabled = UserDefaults.standard.value(forKey: "nightModeEnabled") as? Bool {
                 return nightModeEnabled
             }
             else {
-                return ""
+                return false
             }
         }
         set {
