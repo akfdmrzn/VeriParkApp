@@ -27,11 +27,7 @@ class CustomTabBarController: UITabBarController {
 
    
     
-    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-        if item.title == "Hisseler"{
-         isFirstOpen = false
-        }
-    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

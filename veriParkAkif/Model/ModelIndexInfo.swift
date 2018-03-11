@@ -108,7 +108,7 @@ class ModelIndexInfo: ConnectionDelegate {
                 else if self.imkbType == 2 && String(model.difference).contains("-"){
                     indexInfoList.append(model)
                 }
-                else{
+                else if self.imkbType == 0{
                     indexInfoList.append(model)
                 }
             }

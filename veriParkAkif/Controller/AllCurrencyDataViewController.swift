@@ -8,7 +8,6 @@
 
 import UIKit
 var encryptedData : String = ""
-var isFirstOpen : Bool = true
 class AllCurrencyDataViewController: BaseController {
     
     
@@ -20,35 +19,36 @@ class AllCurrencyDataViewController: BaseController {
     var arrayOfSearch = [ResponseModelIndexInfo]()
     var isSearching = false
     var displayByRise : Int = 0  // 0 - all data , 1 - yükselenler, 2 - düşenler
-    
+    let refreshControl = UIRefreshControl()
     
     
     fileprivate var indexInfoList : [ResponseModelIndexInfo] = []{
         didSet{
+                refreshControl.endRefreshing()
                 self.tableViewOfIndex.reloadData()
+            
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
   
-        isFirstOpen = true
         serachBar.returnKeyType = UIReturnKeyType.done
         serachBar.delegate = self
         
         tableViewOfIndex?.register(ImkbValueCellTableViewCell.nib, forCellReuseIdentifier: ImkbValueCellTableViewCell.identifier)
         tableViewOfIndex?.delegate = self
         tableViewOfIndex?.dataSource = self
-        
+
         self.modelIndexInfo.indexInfoDelegate = self
         self.modelIndexInfo.encryptedData = encryptedData
         self.modelIndexInfo.imkbType = self.displayByRise
         self.modelIndexInfo.sendDataToService()
         self.indicatorShow(status: true)
         
-        
-        
-        
+        refreshControl.addTarget(self, action: #selector(makeRefresh), for: .valueChanged)
+        tableViewOfIndex.refreshControl = refreshControl
+      
     }
     override func viewWillAppear(_ animated: Bool) {
         if user.nightModeEnabled{
@@ -57,17 +57,20 @@ class AllCurrencyDataViewController: BaseController {
         else{
             self.serachBar.barStyle = .default
         }
-        if !isFirstOpen{
-            self.modelIndexInfo.encryptedData = encryptedData
-            self.modelIndexInfo.sendDataToService()
-            self.indicatorShow(status: true)
-        }
+        self.view.layoutIfNeeded()
+        self.tableViewOfIndex.reloadData()
+      
     }
   
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destinationVC = segue.destination as! IndexDetailViewController
         destinationVC.infoIndex = self.choosenIndex
     }
+func makeRefresh(refreshControl: UIRefreshControl) {
+    self.modelIndexInfo.encryptedData = encryptedData
+    self.modelIndexInfo.sendDataToService()
+    
+}
     
 }
 extension AllCurrencyDataViewController : IndexInfoDelegate{

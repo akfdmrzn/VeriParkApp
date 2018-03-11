@@ -10,33 +10,24 @@ import UIKit
 
 class LeftMenuViewController: UIViewController {
 
-    @IBOutlet weak var switchMode: UISwitch!
     var user = UserModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.switchMode.isUserInteractionEnabled = true
         if user.nightModeEnabled{
-            self.switchMode.isOn = true
+            self.view.backgroundColor = UIColor.black
         }
         else{
-            self.switchMode.isOn = false
+            self.view.backgroundColor = UIColor.white
         }
-        self.switchMode.isUserInteractionEnabled = true
-        switchMode.addTarget(self, action: #selector(self.switchChanged(_:)), for: UIControlEvents.valueChanged)
         
         
     }
-    @objc func switchChanged(_ mySwitch: UISwitch) {
-        if switchMode.isOn {
-            user.nightModeEnabled = true
-            self.updateFocusIfNeeded()
-        } else {
-            user.nightModeEnabled = false
-            self.updateFocusIfNeeded()
-        }
+   
+    
+    @IBAction func btnAct(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
        

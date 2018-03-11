@@ -39,7 +39,7 @@ class BaseController: UIViewController {
             self.blurEffectView?.autoresizingMask = [.flexibleWidth, .flexibleHeight]
             self.view.addSubview(blurEffectView!)
             
-            let color = UIColor(red: 238/255, green: 173/255, blue: 14/255, alpha: 1.0)
+            let color = UIColor(red: 180/255, green: 61/255, blue: 40/255, alpha: 1.0)
             let frame = CGRect(x: (self.view.frame.width/2)*0.7, y: (self.view.frame.height/2)*0.7, width: self.view.frame.width/3, height: self.view.frame.height/3)
             self.indicator =  NVActivityIndicatorView(frame: frame, type: NVActivityIndicatorType.ballSpinFadeLoader, color: color, padding: NVActivityIndicatorView.DEFAULT_PADDING )
             
