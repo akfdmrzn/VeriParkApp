@@ -17,6 +17,7 @@ protocol  IndexInfoDelegate : class{
 class ModelIndexInfo: ConnectionDelegate {
 
     var encryptedData : String = ""
+    var imkbType : Int = 0
     var postConnection = PostConnection()
     var indexInfoDelegate : IndexInfoDelegate?
     
@@ -59,8 +60,8 @@ class ModelIndexInfo: ConnectionDelegate {
             }
             for elem in myXml["soap:Envelope"]["soap:Body"]["GetForexStocksandIndexesInfoResponse"]["GetForexStocksandIndexesInfoResult"]["StocknIndexesResponseList"]["StockandIndex"].all {
              
-                var model = ResponseModelIndexInfo()
-                if let symbol = elem["Symbol"].element!.text as? String {
+                let model = ResponseModelIndexInfo()
+                if let symbol = elem["Symbol"].element?.text {
                     model.symbol = symbol
                 }
                 if let hour = elem["Hour"].element?.text {
@@ -101,7 +102,15 @@ class ModelIndexInfo: ConnectionDelegate {
                 if let isIndex = elem["IsIndex"].element?.text{
                     model.isIndex = Bool(isIndex)!
                 }
-               indexInfoList.append(model)
+                if self.imkbType == 1 && !String(model.difference).contains("-"){
+                    indexInfoList.append(model)
+                }
+                else if self.imkbType == 2 && String(model.difference).contains("-"){
+                    indexInfoList.append(model)
+                }
+                else{
+                    indexInfoList.append(model)
+                }
             }
         self.indexInfoDelegate?.IndexInfoDelegate(isCorrect: true, data: indexInfoList, message: "")
     }

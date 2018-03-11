@@ -19,6 +19,8 @@ class AllCurrencyDataViewController: BaseController {
     var choosenIndex = ResponseModelIndexInfo()
     var arrayOfSearch = [ResponseModelIndexInfo]()
     var isSearching = false
+    var displayByRise : Int = 0  // 0 - all data , 1 - yükselenler, 2 - düşenler
+    
     
     
     fileprivate var indexInfoList : [ResponseModelIndexInfo] = []{
@@ -40,6 +42,7 @@ class AllCurrencyDataViewController: BaseController {
         
         self.modelIndexInfo.indexInfoDelegate = self
         self.modelIndexInfo.encryptedData = encryptedData
+        self.modelIndexInfo.imkbType = self.displayByRise
         self.modelIndexInfo.sendDataToService()
         self.indicatorShow(status: true)
         

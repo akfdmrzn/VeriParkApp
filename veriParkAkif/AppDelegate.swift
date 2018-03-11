@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
+        UITabBar.appearance().tintColor = UIColor( red: CGFloat(198/255.0), green: CGFloat(61/255.0), blue: CGFloat(45/255.0), alpha: CGFloat(1.0) )
         IQKeyboardManager.sharedManager().enable = true
         IQKeyboardManager.sharedManager().toolbarDoneBarButtonItemText = "Tamam"
         IQKeyboardManager.sharedManager().shouldResignOnTouchOutside = true

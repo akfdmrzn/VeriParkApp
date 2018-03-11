@@ -9,11 +9,16 @@
 /* Begin PBXBuildFile section */
 		882C8B12932AD3013DC1A38E /* Pods_veriParkAkifTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24713D25E7A5E162B11F3F61 /* Pods_veriParkAkifTests.framework */; };
 		C54E94BC1F8BFC910034F987 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E94BB1F8BFC910034F987 /* AppDelegate.swift */; };
-		C54E94BE1F8BFC910034F987 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E94BD1F8BFC910034F987 /* ViewController.swift */; };
 		C54E94C11F8BFC910034F987 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C54E94BF1F8BFC910034F987 /* Main.storyboard */; };
 		C54E94C31F8BFC910034F987 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C54E94C21F8BFC910034F987 /* Assets.xcassets */; };
 		C54E94C61F8BFC910034F987 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C54E94C41F8BFC910034F987 /* LaunchScreen.storyboard */; };
 		C54E94D11F8BFC910034F987 /* veriParkAkifTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E94D01F8BFC910034F987 /* veriParkAkifTests.swift */; };
+		C552B128205475D200AF9BE7 /* ModelImkbList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C552B127205475D200AF9BE7 /* ModelImkbList.swift */; };
+		C552B12A2054764B00AF9BE7 /* ResponseModelIMKBList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C552B1292054764B00AF9BE7 /* ResponseModelIMKBList.swift */; };
+		C552B12C205478AC00AF9BE7 /* IMKBDisplayByVolumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C552B12B205478AC00AF9BE7 /* IMKBDisplayByVolumeViewController.swift */; };
+		C552B12F20547BAF00AF9BE7 /* IMKBListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C552B12D20547BAF00AF9BE7 /* IMKBListTableViewCell.swift */; };
+		C552B13020547BAF00AF9BE7 /* IMKBListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C552B12E20547BAF00AF9BE7 /* IMKBListTableViewCell.xib */; };
+		C552B134205484EE00AF9BE7 /* ModelOfChooseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C552B133205484EE00AF9BE7 /* ModelOfChooseButton.swift */; };
 		C553101E2051E631001D2A98 /* ModelOfPeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C553101D2051E631001D2A98 /* ModelOfPeriod.swift */; };
 		C55310202051E641001D2A98 /* ResponseModelPeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C553101F2051E641001D2A98 /* ResponseModelPeriod.swift */; };
 		C5882F54205336C600E0A976 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5882F53205336C600E0A976 /* NavigationViewController.swift */; };
@@ -64,7 +69,6 @@
 		BAB359782F3AB9E0489A5ED3 /* Pods-veriParkAkifTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-veriParkAkifTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-veriParkAkifTests/Pods-veriParkAkifTests.release.xcconfig"; sourceTree = "<group>"; };
 		C54E94B81F8BFC910034F987 /* veriParkAkif.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = veriParkAkif.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C54E94BB1F8BFC910034F987 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C54E94BD1F8BFC910034F987 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C54E94C01F8BFC910034F987 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C54E94C21F8BFC910034F987 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C54E94C51F8BFC910034F987 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -72,6 +76,12 @@
 		C54E94CC1F8BFC910034F987 /* veriParkAkifTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = veriParkAkifTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C54E94D01F8BFC910034F987 /* veriParkAkifTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = veriParkAkifTests.swift; sourceTree = "<group>"; };
 		C54E94D21F8BFC910034F987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C552B127205475D200AF9BE7 /* ModelImkbList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelImkbList.swift; sourceTree = "<group>"; };
+		C552B1292054764B00AF9BE7 /* ResponseModelIMKBList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModelIMKBList.swift; sourceTree = "<group>"; };
+		C552B12B205478AC00AF9BE7 /* IMKBDisplayByVolumeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMKBDisplayByVolumeViewController.swift; sourceTree = "<group>"; };
+		C552B12D20547BAF00AF9BE7 /* IMKBListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMKBListTableViewCell.swift; sourceTree = "<group>"; };
+		C552B12E20547BAF00AF9BE7 /* IMKBListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IMKBListTableViewCell.xib; sourceTree = "<group>"; };
+		C552B133205484EE00AF9BE7 /* ModelOfChooseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelOfChooseButton.swift; sourceTree = "<group>"; };
 		C553101D2051E631001D2A98 /* ModelOfPeriod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelOfPeriod.swift; sourceTree = "<group>"; };
 		C553101F2051E641001D2A98 /* ResponseModelPeriod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModelPeriod.swift; sourceTree = "<group>"; };
 		C5882F53205336C600E0A976 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
@@ -163,7 +173,6 @@
 				CB083843205029820013F61D /* Controller */,
 				CB083836205029610013F61D /* View */,
 				C54E94BB1F8BFC910034F987 /* AppDelegate.swift */,
-				C54E94BD1F8BFC910034F987 /* ViewController.swift */,
 				C54E94BF1F8BFC910034F987 /* Main.storyboard */,
 				C54E94C21F8BFC910034F987 /* Assets.xcassets */,
 				C54E94C41F8BFC910034F987 /* LaunchScreen.storyboard */,
@@ -198,13 +207,14 @@
 		CB083843205029820013F61D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CB08386620511AA80013F61D /* BaseController.swift */,
+				C5882F53205336C600E0A976 /* NavigationViewController.swift */,
 				CB083826205026500013F61D /* LeftMenuViewController.swift */,
 				CB083828205026810013F61D /* CustomTabBarController.swift */,
-				CB08386620511AA80013F61D /* BaseController.swift */,
 				CBFBCEE720512947007B7EB1 /* MainPageViewController.swift */,
 				CBFBCEE9205130B8007B7EB1 /* AllCurrencyDataViewController.swift */,
 				CBFBCEEB20514D29007B7EB1 /* IndexDetailViewController.swift */,
-				C5882F53205336C600E0A976 /* NavigationViewController.swift */,
+				C552B12B205478AC00AF9BE7 /* IMKBDisplayByVolumeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -217,6 +227,8 @@
 				C553101D2051E631001D2A98 /* ModelOfPeriod.swift */,
 				CBFBCEED2052669F007B7EB1 /* ModelOfPeriodMonth.swift */,
 				CBFBCEEF20527FC5007B7EB1 /* UserModel.swift */,
+				C552B127205475D200AF9BE7 /* ModelImkbList.swift */,
+				C552B133205484EE00AF9BE7 /* ModelOfChooseButton.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -227,6 +239,7 @@
 				CB08385B2051106F0013F61D /* ResponseModelIndexInfo.swift */,
 				CB08386420511A500013F61D /* ResponseModelEncrypt.swift */,
 				C553101F2051E641001D2A98 /* ResponseModelPeriod.swift */,
+				C552B1292054764B00AF9BE7 /* ResponseModelIMKBList.swift */,
 			);
 			path = ResponseModel;
 			sourceTree = "<group>";
@@ -238,6 +251,8 @@
 				CB08384820502EDD0013F61D /* ImkbDetailTableViewCell.xib */,
 				CB08384B20502FFA0013F61D /* ImkbValueCellTableViewCell.swift */,
 				CB08384C20502FFA0013F61D /* ImkbValueCellTableViewCell.xib */,
+				C552B12D20547BAF00AF9BE7 /* IMKBListTableViewCell.swift */,
+				C552B12E20547BAF00AF9BE7 /* IMKBListTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -352,6 +367,7 @@
 			files = (
 				C54E94C61F8BFC910034F987 /* LaunchScreen.storyboard in Resources */,
 				CB08384A20502EDD0013F61D /* ImkbDetailTableViewCell.xib in Resources */,
+				C552B13020547BAF00AF9BE7 /* IMKBListTableViewCell.xib in Resources */,
 				C54E94C31F8BFC910034F987 /* Assets.xcassets in Resources */,
 				C54E94C11F8BFC910034F987 /* Main.storyboard in Resources */,
 				CB08384E20502FFA0013F61D /* ImkbValueCellTableViewCell.xib in Resources */,
@@ -486,7 +502,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C54E94BE1F8BFC910034F987 /* ViewController.swift in Sources */,
 				CB08385C2051106F0013F61D /* ResponseModelIndexInfo.swift in Sources */,
 				CB08385620503EE50013F61D /* CustomImageView.swift in Sources */,
 				CB08386320511A400013F61D /* ModelEncrypt.swift in Sources */,
@@ -497,16 +512,21 @@
 				CBFBCEF020527FC5007B7EB1 /* UserModel.swift in Sources */,
 				CBFBCEE820512947007B7EB1 /* MainPageViewController.swift in Sources */,
 				CBFBCEEC20514D29007B7EB1 /* IndexDetailViewController.swift in Sources */,
+				C552B134205484EE00AF9BE7 /* ModelOfChooseButton.swift in Sources */,
 				CBFBCEEE2052669F007B7EB1 /* ModelOfPeriodMonth.swift in Sources */,
 				C5882F5620534B3300E0A976 /* NavigationBarSetup.swift in Sources */,
+				C552B12A2054764B00AF9BE7 /* ResponseModelIMKBList.swift in Sources */,
 				CB083860205111C70013F61D /* ConnectionDelegate.swift in Sources */,
 				C553101E2051E631001D2A98 /* ModelOfPeriod.swift in Sources */,
 				C5882F54205336C600E0A976 /* NavigationViewController.swift in Sources */,
 				C54E94BC1F8BFC910034F987 /* AppDelegate.swift in Sources */,
+				C552B128205475D200AF9BE7 /* ModelImkbList.swift in Sources */,
 				CB08385E205111C00013F61D /* PostConnection.swift in Sources */,
 				CB08386720511AA80013F61D /* BaseController.swift in Sources */,
 				CB08385720503EE50013F61D /* CustomTextField.swift in Sources */,
+				C552B12C205478AC00AF9BE7 /* IMKBDisplayByVolumeViewController.swift in Sources */,
 				CB08384D20502FFA0013F61D /* ImkbValueCellTableViewCell.swift in Sources */,
+				C552B12F20547BAF00AF9BE7 /* IMKBListTableViewCell.swift in Sources */,
 				C5882F5820534BD800E0A976 /* TabBarSetup.swift in Sources */,
 				CB083829205026810013F61D /* CustomTabBarController.swift in Sources */,
 				CB08386520511A500013F61D /* ResponseModelEncrypt.swift in Sources */,

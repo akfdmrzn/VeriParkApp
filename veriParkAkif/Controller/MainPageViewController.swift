@@ -15,7 +15,9 @@ class MainPageViewController: BaseController,NavigationBarSetUpProtocol,TabbarSe
     @IBOutlet weak var switchMode: UISwitch!    
     
     var modelEncrypt = ModelEncrypt()
-    var imkbChooseList : [String] = ["Hisse Ve Endeksler","IMKB Yükselenler","IMKB Düşenler","IMKB Hacme Göre -30","IMKB Hacme Göre -50","IMKB Hacme Göre -100"]
+    var modelfChooseButton = ModelOfChooseButton()
+    var choosenImkbTrend : Int = 0
+    var choosenImkbType : Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,6 +73,14 @@ class MainPageViewController: BaseController,NavigationBarSetUpProtocol,TabbarSe
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "enableNightMode"), object: nil)
 
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destinationVC = segue.destination as? AllCurrencyDataViewController{
+            destinationVC.displayByRise = self.choosenImkbTrend
+        }
+        if let destinationVC = segue.destination as? IMKBDisplayByVolumeViewController{
+            destinationVC.imkbType = self.choosenImkbType
+        }
+    }
 
     
 }
@@ -96,13 +106,16 @@ extension MainPageViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return self.tableviewOfChoose.frame.height * 0.12
+        return self.tableviewOfChoose.frame.height * 0.13
     }
 }
 extension MainPageViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: ImkbDetailTableViewCell.identifier, for: indexPath) as? ImkbDetailTableViewCell {
-            cell.labelOfProcessName.text = self.imkbChooseList[indexPath.section]
+            cell.labelOfProcessName.text = self.modelfChooseButton.chooseImkbList.nameList[indexPath.section]
+            cell.imageViewOfProcess.image = self.modelfChooseButton.chooseImkbList.imageList[indexPath.section]
+            
+            cell.labelOfProcessName.layer.cornerRadius = 5.0
             return cell
         }
         return UITableViewCell()
@@ -112,9 +125,19 @@ extension MainPageViewController: UITableViewDataSource {
         return 1
     }
     func numberOfSections(in tableView: UITableView) -> Int {
-        return self.imkbChooseList.count
+        return self.modelfChooseButton.chooseImkbList.nameList.count
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if self.modelfChooseButton.chooseImkbList.idList[indexPath.section] < 3 {
+        self.choosenImkbTrend = self.modelfChooseButton.chooseImkbList.idList[indexPath.section]
+            self.performSegue(withIdentifier: "segueGoToAllCurrency", sender: nil)
+        }
+        else{
+             self.choosenImkbType = self.modelfChooseButton.chooseImkbList.idList[indexPath.section]
+            self.performSegue(withIdentifier: "segueGoToImkbList", sender: nil)
+            
+        }
+       
         
     }
 }
